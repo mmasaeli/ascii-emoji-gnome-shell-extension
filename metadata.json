@@ -1,0 +1,8 @@
+{
+    "uuid": "ascii-emoji@masood.masaeli",
+    "name": "ASCII Emoji",
+    "description": "A GNOME Shell extension for ASCII emojis",
+    "shell-version": [ "47" ],
+    "url": "https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension",
+    "version": 0.1
+}
