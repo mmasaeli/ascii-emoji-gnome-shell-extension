@@ -1,0 +1,735 @@
+[
+  { "name": "acid", "keyword": "acid", "emoji": "⊂(◉‿◉)つ", "count": 0 },
+  { "name": "afraid", "keyword": "afraid", "emoji": "(ㆆ _ ㆆ)", "count": 0 },
+  { "name": "alpha", "keyword": "alpha", "emoji": "α", "count": 0 },
+  { "name": "angel", "keyword": "angel", "emoji": "☜(⌒▽⌒)☞", "count": 0 },
+  { "name": "angry", "keyword": "angry", "emoji": "•`_´•", "count": 0 },
+  {
+    "name": "arrowhead",
+    "keyword": "arrowhead",
+    "emoji": "⤜(ⱺ ʖ̯ⱺ)⤏",
+    "count": 0
+  },
+  { "name": "ass", "keyword": "ass,butt", "emoji": "(‿|‿)", "count": 0 },
+  { "name": "awkward", "keyword": "awkward", "emoji": "•͡˘㇁•͡˘", "count": 0 },
+  { "name": "bear", "keyword": "bear,koala", "emoji": "ʕ·͡ᴥ·ʔ﻿", "count": 0 },
+  {
+    "name": "bearflip",
+    "keyword": "bearflip",
+    "emoji": "ʕノ•ᴥ•ʔノ ︵ ┻━┻",
+    "count": 0
+  },
+  { "name": "bearhug", "keyword": "bearhug", "emoji": "ʕっ•ᴥ•ʔっ", "count": 0 },
+  { "name": "because", "keyword": "because,since", "emoji": "∵", "count": 0 },
+  { "name": "beta", "keyword": "beta", "emoji": "β", "count": 0 },
+  { "name": "bigheart", "keyword": "bigheart", "emoji": "❤", "count": 0 },
+  { "name": "bitcoin", "keyword": "bitcoin", "emoji": "₿", "count": 0 },
+  { "name": "blackeye", "keyword": "blackeye", "emoji": "0__#", "count": 0 },
+  { "name": "blubby", "keyword": "blubby", "emoji": "( 0 _ 0 )", "count": 0 },
+  { "name": "blush", "keyword": "blush", "emoji": "(˵ ͡° ͜ʖ ͡°˵)", "count": 0 },
+  {
+    "name": "bond",
+    "keyword": "bond,007",
+    "emoji": "┌( ͝° ͜ʖ͡°)=ε/̵͇̿̿/’̿’̿ ̿",
+    "count": 0
+  },
+  { "name": "boobs", "keyword": "boobs", "emoji": "( . Y . )", "count": 0 },
+  { "name": "bored", "keyword": "bored", "emoji": "(-_-)", "count": 0 },
+  { "name": "bribe", "keyword": "bribe", "emoji": "( •͡˘ _•͡˘)ノð", "count": 0 },
+  {
+    "name": "bubbles",
+    "keyword": "bubbles",
+    "emoji": "( ˘ ³˘)ノ°ﾟº❍｡",
+    "count": 0
+  },
+  { "name": "butterfly", "keyword": "butterfly", "emoji": "ƸӜƷ", "count": 0 },
+  { "name": "cat", "keyword": "cat", "emoji": "(= ФェФ=)", "count": 0 },
+  {
+    "name": "catlenny",
+    "keyword": "catlenny",
+    "emoji": "( ͡° ᴥ ͡°)﻿",
+    "count": 0
+  },
+  { "name": "check", "keyword": "check", "emoji": "✔", "count": 0 },
+  { "name": "cheer", "keyword": "cheer", "emoji": "※(^o^)/※", "count": 0 },
+  { "name": "chubby", "keyword": "chubby", "emoji": "╭(ʘ̆~◞౪◟~ʘ̆)╮", "count": 0 },
+  { "name": "claro", "keyword": "claro", "emoji": "(͡ ° ͜ʖ ͡ °)", "count": 0 },
+  {
+    "name": "clique",
+    "keyword": "clique,gang, squad",
+    "emoji": "ヽ༼ ຈل͜ຈ༼ ▀̿̿Ĺ̯̿̿▀̿ ̿༽Ɵ͆ل͜Ɵ͆ ༽ﾉ",
+    "count": 0
+  },
+  { "name": "cloud", "keyword": "cloud", "emoji": "☁", "count": 0 },
+  { "name": "club", "keyword": "club", "emoji": "♣", "count": 0 },
+  { "name": "coffee", "keyword": "coffee,cuppa", "emoji": "c[_]", "count": 0 },
+  { "name": "cmd", "keyword": "cmd,command", "emoji": "⌘", "count": 0 },
+  {
+    "name": "cool",
+    "keyword": "cool,csi",
+    "emoji": "(•_•) ( •_•)>⌐■-■ (⌐■_■)",
+    "count": 0
+  },
+  { "name": "copy", "keyword": "copy,c", "emoji": "©", "count": 0 },
+  { "name": "creep", "keyword": "creep", "emoji": "ԅ(≖‿≖ԅ)", "count": 0 },
+  {
+    "name": "creepcute",
+    "keyword": "creepcute",
+    "emoji": "ƪ(ړײ)‎ƪ​​",
+    "count": 0
+  },
+  { "name": "crim3s", "keyword": "crim3s", "emoji": "( ✜︵✜ )", "count": 0 },
+  { "name": "cross", "keyword": "cross", "emoji": "†", "count": 0 },
+  { "name": "cry", "keyword": "cry", "emoji": "(╥﹏╥)", "count": 0 },
+  {
+    "name": "crywave",
+    "keyword": "crywave",
+    "emoji": "( ╥﹏╥) ノシ",
+    "count": 0
+  },
+  { "name": "cute", "keyword": "cute", "emoji": "(｡◕‿‿◕｡)", "count": 0 },
+  { "name": "d1", "keyword": "d1", "emoji": "⚀", "count": 0 },
+  { "name": "d2", "keyword": "d2", "emoji": "⚁", "count": 0 },
+  { "name": "d3", "keyword": "d3", "emoji": "⚂", "count": 0 },
+  { "name": "d4", "keyword": "d4", "emoji": "⚃", "count": 0 },
+  { "name": "d5", "keyword": "d5", "emoji": "⚄", "count": 0 },
+  { "name": "d6", "keyword": "d6", "emoji": "⚅", "count": 0 },
+  { "name": "dab", "keyword": "dab", "emoji": "ヽ( •_)ᕗ", "count": 0 },
+  {
+    "name": "damnyou",
+    "keyword": "damnyou",
+    "emoji": "(ᕗ ͠° ਊ ͠° )ᕗ",
+    "count": 0
+  },
+  { "name": "dance", "keyword": "dance", "emoji": "ᕕ(⌐■_■)ᕗ ♪♬", "count": 0 },
+  { "name": "dead", "keyword": "dead", "emoji": "x⸑x", "count": 0 },
+  {
+    "name": "dealwithit",
+    "keyword": "dealwithit,dwi",
+    "emoji": "(⌐■_■)",
+    "count": 0
+  },
+  { "name": "delta", "keyword": "delta", "emoji": "Δ", "count": 0 },
+  {
+    "name": "depressed",
+    "keyword": "depressed",
+    "emoji": "(︶︹︶)",
+    "count": 0
+  },
+  { "name": "derp", "keyword": "derp", "emoji": "☉ ‿ ⚆", "count": 0 },
+  { "name": "diamond", "keyword": "diamond", "emoji": "♦", "count": 0 },
+  { "name": "dj", "keyword": "dj", "emoji": "d[-_-]b", "count": 0 },
+  { "name": "dog", "keyword": "dog", "emoji": "(◕ᴥ◕ʋ)", "count": 0 },
+  { "name": "dollar", "keyword": "dollar", "emoji": "$", "count": 0 },
+  { "name": "dong", "keyword": "dong", "emoji": "(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄", "count": 0 },
+  { "name": "donger", "keyword": "donger", "emoji": "ヽ༼ຈل͜ຈ༽ﾉ", "count": 0 },
+  {
+    "name": "dontcare",
+    "keyword": "dontcare,idc",
+    "emoji": "(- ʖ̯-)",
+    "count": 0
+  },
+  {
+    "name": "dontwant",
+    "keyword": "dontwant",
+    "emoji": "ヽ(｀Д´)ﾉ",
+    "count": 0
+  },
+  { "name": "dope", "keyword": "dope", "emoji": "<(^_^)>", "count": 0 },
+  { "name": "doubleflat", "keyword": "doubleflat", "emoji": "𝄫", "count": 0 },
+  { "name": "doublesharp", "keyword": "doublesharp", "emoji": "𝄪", "count": 0 },
+  {
+    "name": "doubletableflip",
+    "keyword": "doubletableflip",
+    "emoji": "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻",
+    "count": 0
+  },
+  { "name": "down", "keyword": "down", "emoji": "↓", "count": 0 },
+  { "name": "duckface", "keyword": "duckface", "emoji": "(・3・)", "count": 0 },
+  {
+    "name": "duel",
+    "keyword": "duel",
+    "emoji": "ᕕ(╭ರ╭ ͟ʖ╮•́)⊃¤=(————-",
+    "count": 0
+  },
+  { "name": "duh", "keyword": "duh", "emoji": "(≧︿≦)", "count": 0 },
+  { "name": "dunno", "keyword": "dunno", "emoji": "¯(°_o)/¯", "count": 0 },
+  { "name": "ebola", "keyword": "ebola", "emoji": "ᴇʙᴏʟᴀ", "count": 0 },
+  {
+    "name": "eeriemob",
+    "keyword": "eeriemob",
+    "emoji": "(-(-_-(-_(-_(-_-)_-)-_-)_-)_-)-)",
+    "count": 0
+  },
+  { "name": "emptystar", "keyword": "emptystar", "emoji": "☆", "count": 0 },
+  {
+    "name": "emptytriangle",
+    "keyword": "emptytriangle,t2",
+    "emoji": "△",
+    "count": 0
+  },
+  { "name": "endure", "keyword": "endure", "emoji": "(҂◡_◡) ᕤ", "count": 0 },
+  {
+    "name": "envelope",
+    "keyword": "envelope,letter",
+    "emoji": "✉︎",
+    "count": 0
+  },
+  { "name": "epsilon", "keyword": "epsilon", "emoji": "ɛ", "count": 0 },
+  { "name": "euro", "keyword": "euro", "emoji": "€", "count": 0 },
+  { "name": "evil", "keyword": "evil", "emoji": "ψ(｀∇´)ψ", "count": 0 },
+  {
+    "name": "evillenny",
+    "keyword": "evillenny",
+    "emoji": "(͠≖ ͜ʖ͠≖)",
+    "count": 0
+  },
+  {
+    "name": "excited",
+    "keyword": "excited",
+    "emoji": "(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧",
+    "count": 0
+  },
+  {
+    "name": "execution",
+    "keyword": "execution",
+    "emoji": "(⌐■_■)︻╦╤─ (╥﹏╥)",
+    "count": 0
+  },
+  {
+    "name": "facebook",
+    "keyword": "facebook",
+    "emoji": "(╯°□°)╯︵ ʞooqǝɔɐɟ",
+    "count": 0
+  },
+  { "name": "facepalm", "keyword": "facepalm", "emoji": "(－‸ლ)", "count": 0 },
+  {
+    "name": "fancytext",
+    "keyword": "fancytext",
+    "emoji": "вєωαяє, ι αм ƒαη¢у!",
+    "count": 0
+  },
+  { "name": "fart", "keyword": "fart", "emoji": "(ˆ⺫ˆ๑)<3", "count": 0 },
+  { "name": "fight", "keyword": "fight", "emoji": "(ง •̀_•́)ง", "count": 0 },
+  { "name": "finn", "keyword": "finn", "emoji": "| (• ◡•)|", "count": 0 },
+  { "name": "fish", "keyword": "fish", "emoji": "<\"(((<3", "count": 0 },
+  { "name": "5", "keyword": "5,five", "emoji": "卌", "count": 0 },
+  { "name": "flat", "keyword": "flat,bemolle", "emoji": "♭", "count": 0 },
+  { "name": "flexing", "keyword": "flexing", "emoji": "ᕙ(`▽´)ᕗ", "count": 0 },
+  {
+    "name": "fliptext",
+    "keyword": "fliptext",
+    "emoji": "ǝןqɐʇ ɐ ǝʞıן ǝɯ dıןɟ",
+    "count": 0
+  },
+  {
+    "name": "fliptexttable",
+    "keyword": "fliptexttable",
+    "emoji": "(ノ ゜Д゜)ノ ︵ ǝןqɐʇ ɐ ǝʞıן ʇxǝʇ dıןɟ",
+    "count": 0
+  },
+  {
+    "name": "flipped",
+    "keyword": "flipped,heavytable",
+    "emoji": "┬─┬﻿ ︵ /(.□. ）",
+    "count": 0
+  },
+  { "name": "flower", "keyword": "flower,flor", "emoji": "(✿◠‿◠)", "count": 0 },
+  { "name": "f", "keyword": "f", "emoji": "✿", "count": 0 },
+  { "name": "fly", "keyword": "fly", "emoji": "─=≡Σ((( つ◕ل͜◕)つ", "count": 0 },
+  {
+    "name": "friendflip",
+    "keyword": "friendflip",
+    "emoji": "(╯°□°)╯︵ ┻━┻ ︵ ╯(°□° ╯)",
+    "count": 0
+  },
+  { "name": "frown", "keyword": "frown", "emoji": "(ღ˘⌣˘ღ)", "count": 0 },
+  {
+    "name": "fuckoff",
+    "keyword": "fuckoff,gtfo",
+    "emoji": "୧༼ಠ益ಠ╭∩╮༽",
+    "count": 0
+  },
+  {
+    "name": "fuckyou",
+    "keyword": "fuckyou,fu",
+    "emoji": "┌П┐(ಠ_ಠ)",
+    "count": 0
+  },
+  {
+    "name": "gentleman",
+    "keyword": "gentleman,sir, monocle",
+    "emoji": "ಠ_ರೃ",
+    "count": 0
+  },
+  { "name": "ghast", "keyword": "ghast", "emoji": "= _ =", "count": 0 },
+  { "name": "ghost", "keyword": "ghost", "emoji": "༼ つ ╹ ╹ ༽つ", "count": 0 },
+  {
+    "name": "gift",
+    "keyword": "gift,present",
+    "emoji": "(´・ω・)っ由",
+    "count": 0
+  },
+  { "name": "gimme", "keyword": "gimme", "emoji": "༼ つ ◕_◕ ༽つ", "count": 0 },
+  {
+    "name": "givemeyourmoney",
+    "keyword": "givemeyourmoney",
+    "emoji": "(•-•)⌐",
+    "count": 0
+  },
+  {
+    "name": "glitter",
+    "keyword": "glitter",
+    "emoji": "(*・‿・)ノ⌒*:･ﾟ✧",
+    "count": 0
+  },
+  { "name": "glasses", "keyword": "glasses", "emoji": "(⌐ ͡■ ͜ʖ ͡■)", "count": 0 },
+  {
+    "name": "glassesoff",
+    "keyword": "glassesoff",
+    "emoji": "( ͡° ͜ʖ ͡°)ﾉ⌐■-■",
+    "count": 0
+  },
+  {
+    "name": "glitterderp",
+    "keyword": "glitterderp",
+    "emoji": "(ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧",
+    "count": 0
+  },
+  { "name": "gloomy", "keyword": "gloomy", "emoji": "(_゜_゜_)", "count": 0 },
+  { "name": "goatse", "keyword": "goatse", "emoji": "(з๏ε)", "count": 0 },
+  { "name": "gotit", "keyword": "gotit", "emoji": "(☞ﾟ∀ﾟ)☞", "count": 0 },
+  {
+    "name": "greet",
+    "keyword": "greet,greetings",
+    "emoji": "( ´◔ ω◔`) ノシ",
+    "count": 0
+  },
+  { "name": "gun", "keyword": "gun,mg", "emoji": "︻╦╤─", "count": 0 },
+  {
+    "name": "hadouken",
+    "keyword": "hadouken",
+    "emoji": "༼つಠ益ಠ༽つ ─=≡ΣO))",
+    "count": 0
+  },
+  {
+    "name": "hammerandsickle",
+    "keyword": "hammerandsickle,hs",
+    "emoji": "☭",
+    "count": 0
+  },
+  { "name": "handleft", "keyword": "handleft,hl", "emoji": "☜", "count": 0 },
+  { "name": "handright", "keyword": "handright,hr", "emoji": "☞", "count": 0 },
+  { "name": "haha", "keyword": "haha", "emoji": "٩(^‿^)۶", "count": 0 },
+  { "name": "happy", "keyword": "happy", "emoji": "٩( ๑╹ ꇴ╹)۶", "count": 0 },
+  {
+    "name": "happygarry",
+    "keyword": "happygarry",
+    "emoji": "ᕕ( ᐛ )ᕗ",
+    "count": 0
+  },
+  { "name": "h", "keyword": "h,heart", "emoji": "♥", "count": 0 },
+  {
+    "name": "hello",
+    "keyword": "hello,ohai, bye",
+    "emoji": "(ʘ‿ʘ)╯",
+    "count": 0
+  },
+  { "name": "help", "keyword": "help", "emoji": "(°Ω°)/", "count": 0 },
+  {
+    "name": "highfive",
+    "keyword": "highfive",
+    "emoji": "._.)/(._.",
+    "count": 0
+  },
+  {
+    "name": "hitting",
+    "keyword": "hitting",
+    "emoji": "( ｀皿´)｡ﾐ/",
+    "count": 0
+  },
+  { "name": "hug", "keyword": "hug,hugs", "emoji": "(づ｡◕‿‿◕｡)づ", "count": 0 },
+  {
+    "name": "iknowright",
+    "keyword": "iknowright,ikr",
+    "emoji": "┐｜･ิω･ิ#｜┌",
+    "count": 0
+  },
+  {
+    "name": "illuminati",
+    "keyword": "illuminati",
+    "emoji": "୧(▲ᴗ▲)ノ",
+    "count": 0
+  },
+  { "name": "infinity", "keyword": "infinity,inf", "emoji": "∞", "count": 0 },
+  { "name": "inlove", "keyword": "inlove", "emoji": "(っ´ω`c)♡", "count": 0 },
+  { "name": "int", "keyword": "int", "emoji": "∫", "count": 0 },
+  {
+    "name": "internet",
+    "keyword": "internet",
+    "emoji": "ଘ(੭*ˊᵕˋ)੭* ̀ˋ ɪɴᴛᴇʀɴᴇᴛ",
+    "count": 0
+  },
+  { "name": "interrobang", "keyword": "interrobang", "emoji": "‽", "count": 0 },
+  { "name": "jake", "keyword": "jake", "emoji": "(❍ᴥ❍ʋ)", "count": 0 },
+  { "name": "kappa", "keyword": "kappa", "emoji": "(¬,‿,¬)", "count": 0 },
+  { "name": "kawaii", "keyword": "kawaii", "emoji": "≧◡≦", "count": 0 },
+  { "name": "keen", "keyword": "keen", "emoji": "┬┴┬┴┤Ɵ͆ل͜Ɵ͆ ༽ﾉ", "count": 0 },
+  { "name": "kiahh", "keyword": "kiahh", "emoji": "~(≧▽≦)/~", "count": 0 },
+  { "name": "kiss", "keyword": "kiss", "emoji": "(づ ￣ ³￣)づ", "count": 0 },
+  {
+    "name": "kyubey",
+    "keyword": "kyubey",
+    "emoji": "／人◕ ‿‿ ◕人＼",
+    "count": 0
+  },
+  { "name": "lambda", "keyword": "lambda", "emoji": "λ", "count": 0 },
+  { "name": "lazy", "keyword": "lazy", "emoji": "_(:3」∠)_", "count": 0 },
+  { "name": "lenny", "keyword": "lenny", "emoji": "( ͡° ͜ʖ ͡°)", "count": 0 },
+  {
+    "name": "lennybill",
+    "keyword": "lennybill",
+    "emoji": "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]",
+    "count": 0
+  },
+  {
+    "name": "lennyfight",
+    "keyword": "lennyfight",
+    "emoji": "(ง ͠° ͟ʖ ͡°)ง",
+    "count": 0
+  },
+  {
+    "name": "lennyflip",
+    "keyword": "lennyflip",
+    "emoji": "(ノ ͡° ͜ʖ ͡°ノ) ︵ ( ͜。 ͡ʖ ͜。)",
+    "count": 0
+  },
+  {
+    "name": "lennygang",
+    "keyword": "lennygang",
+    "emoji": "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)",
+    "count": 0
+  },
+  {
+    "name": "lennyshrug",
+    "keyword": "lennyshrug",
+    "emoji": "¯_( ͡° ͜ʖ ͡°)_/¯",
+    "count": 0
+  },
+  {
+    "name": "lennysir",
+    "keyword": "lennysir",
+    "emoji": "( ಠ ͜ʖ ರೃ)",
+    "count": 0
+  },
+  {
+    "name": "lennystalker",
+    "keyword": "lennystalker",
+    "emoji": "┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴",
+    "count": 0
+  },
+  {
+    "name": "lennystrong",
+    "keyword": "lennystrong",
+    "emoji": "ᕦ( ͡° ͜ʖ ͡°)ᕤ",
+    "count": 0
+  },
+  {
+    "name": "lennywizard",
+    "keyword": "lennywizard",
+    "emoji": "╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ",
+    "count": 0
+  },
+  {
+    "name": "loading",
+    "keyword": "loading",
+    "emoji": "███▒▒▒▒▒▒▒",
+    "count": 0
+  },
+  { "name": "lol", "keyword": "lol", "emoji": "L(° O °L)", "count": 0 },
+  { "name": "look", "keyword": "look", "emoji": "(ಡ_ಡ)☞", "count": 0 },
+  { "name": "loud", "keyword": "loud,noise", "emoji": "ᕦ(⩾﹏⩽)ᕥ", "count": 0 },
+  { "name": "love", "keyword": "love", "emoji": "♥‿♥", "count": 0 },
+  { "name": "lovebear", "keyword": "lovebear", "emoji": "ʕ♥ᴥ♥ʔ", "count": 0 },
+  { "name": "lumpy", "keyword": "lumpy", "emoji": "꒰ ꒡⌓꒡꒱", "count": 0 },
+  { "name": "luv", "keyword": "luv", "emoji": "-`ღ´-", "count": 0 },
+  {
+    "name": "magic",
+    "keyword": "magic",
+    "emoji": "ヽ(｀Д´)⊃━☆ﾟ. * ･ ｡ﾟ,",
+    "count": 0
+  },
+  {
+    "name": "magicflip",
+    "keyword": "magicflip",
+    "emoji": "(/¯◡ ‿ ◡)/¯ ~ ┻━┻",
+    "count": 0
+  },
+  { "name": "meep", "keyword": "meep", "emoji": "(°^°)/", "count": 0 },
+  { "name": "meh", "keyword": "meh", "emoji": "ಠ_ಠ", "count": 0 },
+  {
+    "name": "metal",
+    "keyword": "metal,rock",
+    "emoji": "m/,(> . <)_m/",
+    "count": 0
+  },
+  { "name": "mistyeyes", "keyword": "mistyeyes", "emoji": "ಡ_ಡ", "count": 0 },
+  {
+    "name": "monster",
+    "keyword": "monster",
+    "emoji": "༼ ༎ຶ ෴ ༎ຶ༽",
+    "count": 0
+  },
+  { "name": "natural", "keyword": "natural", "emoji": "♮", "count": 0 },
+  {
+    "name": "needle",
+    "keyword": "needle,inject",
+    "emoji": "┌(◉ ͜ʖ◉)つ┣▇▇▇═──",
+    "count": 0
+  },
+  { "name": "nerd", "keyword": "nerd", "emoji": "(⌐⊙_⊙)", "count": 0 },
+  { "name": "nice", "keyword": "nice", "emoji": "( ͡° ͜ °)", "count": 0 },
+  { "name": "no", "keyword": "no", "emoji": "→_←", "count": 0 },
+  {
+    "name": "noclue",
+    "keyword": "noclue",
+    "emoji": "／人◕ __ ◕人＼",
+    "count": 0
+  },
+  {
+    "name": "nom",
+    "keyword": "nom,yummy, delicious",
+    "emoji": "(っˆڡˆς)",
+    "count": 0
+  },
+  { "name": "note", "keyword": "note,sing", "emoji": "♫", "count": 0 },
+  {
+    "name": "nuclear",
+    "keyword": "nuclear,radioactive, nukular",
+    "emoji": "☢",
+    "count": 0
+  },
+  { "name": "nyan", "keyword": "nyan", "emoji": "~=[,,_,,]:3", "count": 0 },
+  { "name": "nyeh", "keyword": "nyeh", "emoji": "@^@", "count": 0 },
+  { "name": "ohshit", "keyword": "ohshit", "emoji": "( º﹃º )", "count": 0 },
+  { "name": "omega", "keyword": "omega", "emoji": "Ω", "count": 0 },
+  { "name": "omg", "keyword": "omg", "emoji": "◕_◕", "count": 0 },
+  { "name": "opt", "keyword": "opt,option", "emoji": "⌥", "count": 0 },
+  { "name": "orly", "keyword": "orly", "emoji": "(눈_눈)", "count": 0 },
+  { "name": "ohyou", "keyword": "ohyou,ou", "emoji": "(◞థ౪థ)ᴖ", "count": 0 },
+  {
+    "name": "peace",
+    "keyword": "peace,victory",
+    "emoji": "✌(-‿-)✌",
+    "count": 0
+  },
+  { "name": "pear", "keyword": "pear", "emoji": "(__>-", "count": 0 },
+  { "name": "pi", "keyword": "pi", "emoji": "π", "count": 0 },
+  {
+    "name": "pingpong",
+    "keyword": "pingpong",
+    "emoji": "( •_•)O*¯`·.¸.·´¯`°Q(•_• )",
+    "count": 0
+  },
+  { "name": "plain", "keyword": "plain", "emoji": "._.", "count": 0 },
+  {
+    "name": "pleased",
+    "keyword": "pleased",
+    "emoji": "(˶‾᷄ ⁻̫ ‾᷅˵)",
+    "count": 0
+  },
+  { "name": "point", "keyword": "point", "emoji": "(☞ﾟヮﾟ)☞", "count": 0 },
+  { "name": "pooh", "keyword": "pooh", "emoji": "ʕ •́؈•̀)", "count": 0 },
+  {
+    "name": "porcupine",
+    "keyword": "porcupine",
+    "emoji": "(•ᴥ• )́`́'́`́'́⻍",
+    "count": 0
+  },
+  { "name": "pound", "keyword": "pound", "emoji": "£", "count": 0 },
+  { "name": "praise", "keyword": "praise", "emoji": "(☝ ՞ਊ ՞)☝", "count": 0 },
+  { "name": "punch", "keyword": "punch", "emoji": "O=('-'Q)", "count": 0 },
+  { "name": "rage", "keyword": "rage,mad", "emoji": "t(ಠ益ಠt)", "count": 0 },
+  {
+    "name": "rageflip",
+    "keyword": "rageflip",
+    "emoji": "(ノಠ益ಠ)ノ彡┻━┻",
+    "count": 0
+  },
+  {
+    "name": "rainbowcat",
+    "keyword": "rainbowcat",
+    "emoji": "(=^･ｪ･^=))ﾉ彡☆",
+    "count": 0
+  },
+  { "name": "really", "keyword": "really", "emoji": "ò_ô", "count": 0 },
+  { "name": "r", "keyword": "r", "emoji": "®", "count": 0 },
+  { "name": "riot", "keyword": "riot", "emoji": "୧༼ಠ益ಠ༽୨", "count": 0 },
+  { "name": "rolldice", "keyword": "rolldice", "emoji": "⚄", "count": 0 },
+  { "name": "rolleyes", "keyword": "rolleyes", "emoji": "(◔_◔)", "count": 0 },
+  { "name": "rose", "keyword": "rose", "emoji": "✿ڿڰۣ—", "count": 0 },
+  { "name": "run", "keyword": "run", "emoji": "(╯°□°)╯", "count": 0 },
+  { "name": "sad", "keyword": "sad", "emoji": "ε(´סּ︵סּ`)з", "count": 0 },
+  {
+    "name": "saddonger",
+    "keyword": "saddonger",
+    "emoji": "ヽ༼ຈʖ̯ຈ༽ﾉ",
+    "count": 0
+  },
+  {
+    "name": "sadlenny",
+    "keyword": "sadlenny",
+    "emoji": "( ͡° ʖ̯ ͡°)",
+    "count": 0
+  },
+  { "name": "sharp", "keyword": "sharp,diesis", "emoji": "♯", "count": 0 },
+  { "name": "shout", "keyword": "shout", "emoji": "╚(•⌂•)╝", "count": 0 },
+  { "name": "shrug", "keyword": "shrug", "emoji": "¯_(ツ)_/¯", "count": 0 },
+  { "name": "shy", "keyword": "shy", "emoji": "=^_^=", "count": 0 },
+  { "name": "sigma", "keyword": "sigma,sum", "emoji": "Σ", "count": 0 },
+  { "name": "skull", "keyword": "skull", "emoji": "☠", "count": 0 },
+  { "name": "smile", "keyword": "smile", "emoji": "ツ", "count": 0 },
+  { "name": "smiley", "keyword": "smiley", "emoji": "☺︎", "count": 0 },
+  { "name": "smirk", "keyword": "smirk", "emoji": "¬‿¬", "count": 0 },
+  { "name": "snowman", "keyword": "snowman", "emoji": "☃", "count": 0 },
+  { "name": "sob", "keyword": "sob", "emoji": "(;´༎ຶД༎ຶ`)", "count": 0 },
+  { "name": "spade", "keyword": "spade", "emoji": "♠", "count": 0 },
+  { "name": "sqrt", "keyword": "sqrt", "emoji": "√", "count": 0 },
+  { "name": "squid", "keyword": "squid", "emoji": "<コ:彡", "count": 0 },
+  { "name": "star", "keyword": "star", "emoji": "★", "count": 0 },
+  { "name": "strong", "keyword": "strong", "emoji": "ᕙ(⇀‸↼‶)ᕗ", "count": 0 },
+  {
+    "name": "suicide",
+    "keyword": "suicide",
+    "emoji": "ε/̵͇̿̿/’̿’̿ ̿(◡︵◡)",
+    "count": 0
+  },
+  { "name": "sum", "keyword": "sum", "emoji": "∑", "count": 0 },
+  { "name": "sun", "keyword": "sun", "emoji": "☀", "count": 0 },
+  {
+    "name": "surprised",
+    "keyword": "surprised",
+    "emoji": "(๑•́ ヮ •̀๑)",
+    "count": 0
+  },
+  {
+    "name": "surrender",
+    "keyword": "surrender",
+    "emoji": "_(-_-)_/",
+    "count": 0
+  },
+  {
+    "name": "stalker",
+    "keyword": "stalker",
+    "emoji": "┬┴┬┴┤(･_├┬┴┬┴",
+    "count": 0
+  },
+  { "name": "swag", "keyword": "swag", "emoji": "(̿▀̿‿ ̿▀̿ ̿)", "count": 0 },
+  {
+    "name": "sword",
+    "keyword": "sword",
+    "emoji": "o()xxxx[{::::::::::::::::::>",
+    "count": 0
+  },
+  {
+    "name": "tabledown",
+    "keyword": "tabledown",
+    "emoji": "┬─┬﻿ ノ( ゜-゜ノ)",
+    "count": 0
+  },
+  {
+    "name": "tableflip",
+    "keyword": "tableflip",
+    "emoji": "(ノ ゜Д゜)ノ ︵ ┻━┻",
+    "count": 0
+  },
+  { "name": "tau", "keyword": "tau", "emoji": "τ", "count": 0 },
+  { "name": "tears", "keyword": "tears", "emoji": "(ಥ﹏ಥ)", "count": 0 },
+  {
+    "name": "terrorist",
+    "keyword": "terrorist",
+    "emoji": "୧༼ಠ益ಠ༽︻╦╤─",
+    "count": 0
+  },
+  {
+    "name": "thanks",
+    "keyword": "thanks,thankyou, ty",
+    "emoji": "(^-^)/",
+    "count": 0
+  },
+  { "name": "therefore", "keyword": "therefore,so", "emoji": "⸫", "count": 0 },
+  { "name": "this", "keyword": "this", "emoji": "( ͡° ͜ʖ ͡°)_/¯", "count": 0 },
+  {
+    "name": "tiefighter",
+    "keyword": "tiefighter",
+    "emoji": "|=-(¤)-=|",
+    "count": 0
+  },
+  { "name": "tired", "keyword": "tired", "emoji": "(=____=)", "count": 0 },
+  {
+    "name": "toldyouso",
+    "keyword": "toldyouso,toldyou",
+    "emoji": "☜(꒡⌓꒡)",
+    "count": 0
+  },
+  { "name": "toogood", "keyword": "toogood", "emoji": "ᕦ(òᴥó)ᕥ", "count": 0 },
+  { "name": "triangle", "keyword": "triangle,t", "emoji": "▲", "count": 0 },
+  {
+    "name": "unflip",
+    "keyword": "unflip",
+    "emoji": "┬──┬ ノ(ò_óノ)",
+    "count": 0
+  },
+  { "name": "up", "keyword": "up", "emoji": "↑", "count": 0 },
+  { "name": "victory", "keyword": "victory", "emoji": "(๑•̀ㅂ•́)ง✧", "count": 0 },
+  { "name": "wat", "keyword": "wat", "emoji": "(ÒДÓױ)", "count": 0 },
+  { "name": "wave", "keyword": "wave", "emoji": "( * ^ *) ノシ", "count": 0 },
+  { "name": "whaa", "keyword": "whaa", "emoji": "Ö", "count": 0 },
+  { "name": "whistle", "keyword": "whistle", "emoji": "(っ^з^)♪♬", "count": 0 },
+  { "name": "whoa", "keyword": "whoa", "emoji": "(°o•)", "count": 0 },
+  { "name": "why", "keyword": "why", "emoji": "ლ(`◉◞౪◟◉‵ლ)", "count": 0 },
+  {
+    "name": "witchtext",
+    "keyword": "witchtext",
+    "emoji": "WHΣИ $HΛLL WΣ †HЯΣΣ MΣΣ† ΛGΛ|И?",
+    "count": 0
+  },
+  { "name": "woo", "keyword": "woo", "emoji": "＼(＾O＾)／", "count": 0 },
+  { "name": "wtf", "keyword": "wtf", "emoji": "(⊙＿⊙')", "count": 0 },
+  { "name": "wut", "keyword": "wut", "emoji": "⊙ω⊙", "count": 0 },
+  { "name": "yay", "keyword": "yay", "emoji": "( ﾟヮﾟ)/", "count": 0 },
+  { "name": "yeah", "keyword": "yeah,yes", "emoji": "(•̀ᴗ•́)و ̑̑", "count": 0 },
+  { "name": "yen", "keyword": "yen", "emoji": "¥", "count": 0 },
+  { "name": "yinyang", "keyword": "yinyang,yy", "emoji": "☯", "count": 0 },
+  {
+    "name": "yolo",
+    "keyword": "yolo",
+    "emoji": "Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ",
+    "count": 0
+  },
+  {
+    "name": "youkids",
+    "keyword": "youkids,ukids",
+    "emoji": "ლ༼>╭ ͟ʖ╮<༽ლ",
+    "count": 0
+  },
+  {
+    "name": "yuno",
+    "keyword": "yuno",
+    "emoji": "(屮ﾟДﾟ)屮 Y U NO",
+    "count": 0
+  },
+  {
+    "name": "zen",
+    "keyword": "zen,meditation, omm",
+    "emoji": "⊹╰(⌣ʟ⌣)╯⊹",
+    "count": 0
+  },
+  {
+    "name": "zoidberg",
+    "keyword": "zoidberg",
+    "emoji": "(V) (°,,,,°) (V)",
+    "count": 0
+  },
+  { "name": "zombie", "keyword": "zombie", "emoji": "[¬º-°]¬", "count": 0 }
+]
