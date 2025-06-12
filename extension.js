@@ -35,34 +35,43 @@ const Indicator = GObject.registerClass(
         .get_clutter_text()
         .connect("text-changed", this._refreshItems.bind(this));
 
+      this._scrollView = new St.ScrollView({
+        style_class: "vfade",
+        overlay_scrollbars: true,
+        x_expand: true,
+      });
+      this.menu.box.add_child(this._scrollView);
+
+      this._listBox = new St.BoxLayout({ vertical: true });
+      this._scrollView.add_child(this._listBox);
+
       this.clipboard = St.Clipboard.get_default();
 
-      this._menuItems = [];
       this._emojiData = loadEmojiData();
       this._refreshItems();
     }
 
     _refreshItems() {
-      this._menuItems.forEach((item) => item.destroy());
-      this._menuItems.length = 0;
+      this._listBox.destroy_all_children();
 
       const query = this.searchEntry.get_text().toLowerCase();
 
-      const matchedEmojis = this._emojiData
-        .filter((emoji) => emoji.keyword.toLowerCase().includes(query))
-        .sort((a, b) => b.count - a.count)
-        .slice(0, 10);
+      const matchedEmojis = this._emojiData.filter((emoji) =>
+        emoji.keyword.toLowerCase().includes(query)
+      );
 
       matchedEmojis.forEach((emoji) => {
-        let item = new PopupMenu.PopupMenuItem(`${emoji.name}: ${emoji.emoji}`);
+        let item = new PopupMenu.PopupMenuItem(
+          `${emoji.name}:\t${emoji.emoji}`
+        );
         item.connect("activate", () => {
           this.clipboard.set_text(St.ClipboardType.CLIPBOARD, emoji.emoji);
           emoji.count += 1;
+          this._emojiData.sort((a, b) => b.count - a.count);
           saveEmojiData(this._emojiData);
           this._refreshItems();
         });
-        this.menu.addMenuItem(item);
-        this._menuItems.push(item);
+        this._listBox.add_child(item);
       });
     }
   }
