@@ -61,9 +61,27 @@ const Indicator = GObject.registerClass(
       );
 
       matchedEmojis.forEach((emoji) => {
-        let item = new PopupMenu.PopupMenuItem(
-          `${emoji.name}:\t${emoji.emoji}`
-        );
+        let drawing = new St.BoxLayout({
+          vertical: false,
+          x_expand: true,
+        });
+
+        let nameLabel = new St.Label({
+          text: emoji.name,
+          x_expand: true,
+        });
+
+        let emojiLabel = new St.Label({
+          text: emoji.emoji,
+          x_expand: true,
+        });
+
+        drawing.add_child(nameLabel);
+        drawing.add_child(emojiLabel);
+
+        let item = new PopupMenu.PopupBaseMenuItem();
+        item.add_child(drawing);
+
         item.connect("activate", () => {
           this.clipboard.set_text(St.ClipboardType.CLIPBOARD, emoji.emoji);
           emoji.count += 1;
