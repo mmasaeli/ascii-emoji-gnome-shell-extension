@@ -83,6 +83,7 @@ const Indicator = GObject.registerClass(
         item.add_child(drawing);
 
         item.connect("activate", () => {
+          this.searchEntry.set_text('');
           this.clipboard.set_text(St.ClipboardType.CLIPBOARD, emoji.emoji);
           emoji.count += 1;
           this._emojiData.sort((a, b) => b.count - a.count);
