@@ -83,7 +83,7 @@ const Indicator = GObject.registerClass(
         item.add_child(drawing);
 
         item.connect("activate", () => {
-          this.searchEntry.set_text('');
+          this.searchEntry.set_text("");
           this.clipboard.set_text(St.ClipboardType.CLIPBOARD, emoji.emoji);
           emoji.count += 1;
           this._emojiData.sort((a, b) => b.count - a.count);
@@ -96,7 +96,7 @@ const Indicator = GObject.registerClass(
   }
 );
 
-export default class IndicatorExampleExtension extends Extension {
+export default class AsciiEmojiExtension extends Extension {
   enable() {
     this._indicator = new Indicator();
     Main.panel.addToStatusArea(this.uuid, this._indicator);

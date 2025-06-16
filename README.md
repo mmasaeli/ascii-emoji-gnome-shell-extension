@@ -7,7 +7,7 @@ The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.c
 ## Features
 
 - Search for ASCII emojis by name or keyword.
-- Copy emojis to clipboard with a single click.
+- Copy emojis to **clipboard** with a single click.
 - Simple and lightweight panel indicator.
 
 ## Installation
