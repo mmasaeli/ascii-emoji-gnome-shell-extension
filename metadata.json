@@ -2,7 +2,7 @@
     "uuid": "ascii-emoji@masood.masaeli",
     "name": "ASCII Emoji",
     "description": "A GNOME Shell extension for copying ASCII emojis into the clipboard",
-    "shell-version": [ "46", "47", "48", "49"],
+    "shell-version": [ "46", "47", "48", "49", "50"],
     "url": "https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension",
-    "version": 6
+    "version": 7
 }
