@@ -1,12 +1,12 @@
-# ASCII Emoji GNOME Shell Extension
+# ASCII Emoji/Unicode Kaomoji GNOME Shell Extension
 
-A GNOME Shell extension that lets you quickly search and copy ASCII emojis from your panel.
+A GNOME Shell extension that lets you quickly search and copy Unicode Kaomoji/ASCII emojis from your panel.
 
 The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.com/].
 
 ## Features
 
-- Search for ASCII emojis by name or keyword.
+- Search for emojis/Kaomoji by name or keyword.
 - Copy emojis to **clipboard** with a single click.
 - Simple and lightweight panel indicator.
 
@@ -37,9 +37,9 @@ The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.c
 
 ## Usage
 
-- Click the ASCII Emoji icon in your top panel.
+- Click the icon in your top panel.
 - Type to search for an emoji.
-- Click an emoji to copy it to your clipboard.
+- Click an emoji/Kaomoji to copy it to your clipboard.
 
 ## Development
 
