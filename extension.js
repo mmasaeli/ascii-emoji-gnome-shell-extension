@@ -2,6 +2,7 @@ import St from "gi://St";
 import GObject from "gi://GObject";
 import Gio from "gi://Gio";
 import GLib from "gi://GLib";
+import Clutter from "gi://Clutter";
 
 import {
   Extension,
@@ -14,12 +15,13 @@ import * as Main from "resource:///org/gnome/shell/ui/main.js";
 const Indicator = GObject.registerClass(
   class Indicator extends PanelMenu.Button {
     _init() {
-      super._init(0.0, _("ASCII Emoji"));
+      super._init(0.5, _("ASCII Emoji"));
 
       this.add_child(
         new St.Label({
           text: "(◉‿◉)",
           style_class: "system-status-icon",
+          y_align: Clutter.ActorAlign.CENTER,
         })
       );
 
