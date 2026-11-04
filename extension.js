@@ -44,7 +44,9 @@ const Indicator = GObject.registerClass(
       });
       this.menu.box.add_child(this._scrollView);
 
-      this._listBox = new St.BoxLayout({ vertical: true });
+      this._listBox = new St.BoxLayout({
+        orientation: Clutter.Orientation.VERTICAL,
+      });
       this._scrollView.add_child(this._listBox);
 
       this.clipboard = St.Clipboard.get_default();
@@ -64,7 +66,7 @@ const Indicator = GObject.registerClass(
 
       matchedEmojis.forEach((emoji) => {
         let drawing = new St.BoxLayout({
-          vertical: false,
+          orientation: Clutter.Orientation.HORIZONTAL,
           x_expand: true,
         });
 
@@ -124,7 +126,7 @@ function loadEmojiData() {
     let file = Gio.File.new_for_path(DATA_FILE_PATH);
     let [ok, content] = file.load_contents(null);
     if (ok) {
-      return JSON.parse(content);
+      return JSON.parse(new TextDecoder().decode(content));
     }
   } catch (e) {
     logError(e, "Failed to load emoji data");
