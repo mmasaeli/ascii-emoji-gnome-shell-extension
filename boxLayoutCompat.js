@@ -2,10 +2,10 @@
 // removed the older `vertical` property, so neither works across our whole
 // supported range (46-51) on its own.
 //
-// Kept free of `resource://` imports so it can be loaded directly by plain
-// `gjs` (see tests/check-box-layout-api.js) against the real St/Clutter
-// typelibs for each supported GNOME Shell version, without needing a running
-// shell session.
+// Kept free of `resource://` imports so it stays independently testable.
+// tests/check_box_layout_api.py mirrors the threshold below against the real
+// St.BoxLayout typelib for each supported GNOME Shell version - keep them in
+// sync if this changes.
 
 export function usesOrientationProperty(shellMajorVersion) {
   return shellMajorVersion >= 48;
