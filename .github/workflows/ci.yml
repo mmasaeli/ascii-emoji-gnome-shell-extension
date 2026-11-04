@@ -2,6 +2,7 @@ name: CI
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 # Cancel a still-running run for the same branch/PR when a new push arrives,
