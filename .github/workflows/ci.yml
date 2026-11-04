@@ -4,6 +4,14 @@ on:
   push:
   pull_request:
 
+# Cancel a still-running run for the same branch/PR when a new push arrives,
+# instead of letting both finish and wasting CI minutes on the stale one.
+# Exception: let main's runs finish, since each push there should get a
+# recorded result rather than being superseded.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 jobs:
   lint:
     name: ESLint
