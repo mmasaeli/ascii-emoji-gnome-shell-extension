@@ -133,8 +133,9 @@ function loadEmojiData() {
       return JSON.parse(new TextDecoder().decode(content));
     }
   } catch (e) {
-    logError(e, "Failed to load emoji data");
+    console.error("Failed to load emoji data", e);
   }
+  return [];
 }
 
 function saveEmojiData(data) {
@@ -148,6 +149,6 @@ function saveEmojiData(data) {
       null
     );
   } catch (e) {
-    logError(e, "Failed to save emoji data");
+    console.error("Failed to save emoji data", e);
   }
 }
