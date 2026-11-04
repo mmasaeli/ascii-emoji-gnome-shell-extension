@@ -13,20 +13,12 @@ import * as PopupMenu from "resource:///org/gnome/shell/ui/popupMenu.js";
 import * as Main from "resource:///org/gnome/shell/ui/main.js";
 import * as Config from "resource:///org/gnome/shell/misc/config.js";
 
-// GNOME Shell 48 added St.BoxLayout's `orientation` property; GNOME Shell 51
-// removed the older `vertical` property, so neither works across our whole
-// supported range on its own.
+import { newBoxLayout as _newBoxLayout } from "./boxLayoutCompat.js";
+
 const SHELL_MAJOR_VERSION = parseInt(Config.PACKAGE_VERSION.split(".")[0], 10);
 
 function newBoxLayout(vertical, props = {}) {
-  if (SHELL_MAJOR_VERSION >= 48) {
-    props.orientation = vertical
-      ? Clutter.Orientation.VERTICAL
-      : Clutter.Orientation.HORIZONTAL;
-  } else {
-    props.vertical = vertical;
-  }
-  return new St.BoxLayout(props);
+  return _newBoxLayout(St, Clutter, SHELL_MAJOR_VERSION, vertical, props);
 }
 
 const Indicator = GObject.registerClass(
