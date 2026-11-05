@@ -9,6 +9,7 @@ The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.c
 - Search for emojis/Kaomoji by name or keyword.
 - Copy emojis to **clipboard** with a single click.
 - Simple and lightweight panel indicator.
+- Remembers your most-used emojis and lists them first. The counts are stored in `~/.local/share/ascii-emoji@masood.masaeli/counts.json`, so they are kept across extension updates.
 
 ## Installation
 
@@ -110,6 +111,22 @@ Before releasing a new version, manually verify the extension actually works in 
 6. Close the nested window (or `Ctrl+C` in its terminal) when done - it leaves your real session untouched.
 
 We looked into automating this fully in CI (mocking GNOME Shell's system D-Bus dependencies, or a full systemd+Xvfb container, similar to [Simon Schneegans' approach](https://schneegans.github.io/tutorials/2022/02/28/gnome-shell-extensions-ci-01)) and deliberately deferred it - real session testing in CI is a meaningfully larger investment than the API compatibility check above, so for now it's a manual pre-release step instead.
+
+### Packaging a release
+
+```sh
+make package
+```
+
+This runs the linter, **bumps the integer `version` in `metadata.json` by 1** (extensions.gnome.org requires a higher version for every upload), and then builds `dist/<uuid>.v<version>.shell-extension.zip`. The zip contains only the files GNOME Shell needs at runtime: `extension.js`, `boxLayoutCompat.js`, `emojis.json`, `metadata.json` and `LICENSE`.
+
+- Every run bumps the version, including local test builds. If lint fails, nothing is bumped or built.
+- Commit the bumped `metadata.json` together with the release.
+- To try the zip locally: `gnome-extensions install --force dist/*.zip`, then log out and back in (Wayland) or restart the shell (X11).
+- To publish, upload the zip at <https://extensions.gnome.org/upload/>.
+- `make clean` removes the `dist/` folder.
+
+Follow the "Manual release testing" steps above before packaging.
 
 ## License
 
