@@ -116,39 +116,67 @@ export default class AsciiEmojiExtension extends Extension {
   }
 }
 
-// File path for persistent storage
-const DATA_FILE_PATH = GLib.build_filenamev([
-  GLib.get_user_data_dir(),
-  "gnome-shell",
-  "extensions",
-  "ascii-emoji@masood.masaeli",
+// The bundled emoji list ships with the extension and is replaced on every
+// update, so it is treated as read-only.
+const BUNDLED_DATA_PATH = GLib.build_filenamev([
+  GLib.path_get_dirname(GLib.filename_from_uri(import.meta.url)[0]),
   "emojis.json",
 ]);
 
-function loadEmojiData() {
+// User state (usage counts) lives outside the extension directory so that it
+// survives updates and reinstalls.
+const USER_DATA_DIR = GLib.build_filenamev([
+  GLib.get_user_data_dir(),
+  "ascii-emoji@masood.masaeli",
+]);
+const COUNTS_FILE_PATH = GLib.build_filenamev([USER_DATA_DIR, "counts.json"]);
+
+function readJson(path) {
+  const file = Gio.File.new_for_path(path);
+  const [ok, content] = file.load_contents(null);
+  return ok ? JSON.parse(new TextDecoder().decode(content)) : null;
+}
+
+function loadCounts() {
   try {
-    let file = Gio.File.new_for_path(DATA_FILE_PATH);
-    let [ok, content] = file.load_contents(null);
-    if (ok) {
-      return JSON.parse(new TextDecoder().decode(content));
-    }
+    if (GLib.file_test(COUNTS_FILE_PATH, GLib.FileTest.EXISTS))
+      return readJson(COUNTS_FILE_PATH) ?? {};
+  } catch (e) {
+    console.error("Failed to load emoji counts", e);
+  }
+  return {};
+}
+
+function loadEmojiData() {
+  let data = [];
+  try {
+    data = readJson(BUNDLED_DATA_PATH) ?? [];
   } catch (e) {
     console.error("Failed to load emoji data", e);
   }
-  return [];
+  const counts = loadCounts();
+  data.forEach((emoji) => {
+    emoji.count = counts[emoji.name] ?? emoji.count ?? 0;
+  });
+  data.sort((a, b) => b.count - a.count);
+  return data;
 }
 
 function saveEmojiData(data) {
   try {
-    let file = Gio.File.new_for_path(DATA_FILE_PATH);
-    file.replace_contents(
-      JSON.stringify(data),
+    GLib.mkdir_with_parents(USER_DATA_DIR, 0o755);
+    const counts = {};
+    data.forEach((emoji) => {
+      if (emoji.count > 0) counts[emoji.name] = emoji.count;
+    });
+    Gio.File.new_for_path(COUNTS_FILE_PATH).replace_contents(
+      JSON.stringify(counts),
       null,
       false,
       Gio.FileCreateFlags.NONE,
       null
     );
   } catch (e) {
-    console.error("Failed to save emoji data", e);
+    console.error("Failed to save emoji counts", e);
   }
 }
