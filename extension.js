@@ -11,6 +11,15 @@ import {
 import * as PanelMenu from "resource:///org/gnome/shell/ui/panelMenu.js";
 import * as PopupMenu from "resource:///org/gnome/shell/ui/popupMenu.js";
 import * as Main from "resource:///org/gnome/shell/ui/main.js";
+import * as Config from "resource:///org/gnome/shell/misc/config.js";
+
+import { newBoxLayout as _newBoxLayout } from "./boxLayoutCompat.js";
+
+const SHELL_MAJOR_VERSION = parseInt(Config.PACKAGE_VERSION.split(".")[0], 10);
+
+function newBoxLayout(vertical, props = {}) {
+  return _newBoxLayout(St, Clutter, SHELL_MAJOR_VERSION, vertical, props);
+}
 
 const Indicator = GObject.registerClass(
   class Indicator extends PanelMenu.Button {
@@ -44,7 +53,7 @@ const Indicator = GObject.registerClass(
       });
       this.menu.box.add_child(this._scrollView);
 
-      this._listBox = new St.BoxLayout({ vertical: true });
+      this._listBox = newBoxLayout(true);
       this._scrollView.add_child(this._listBox);
 
       this.clipboard = St.Clipboard.get_default();
@@ -63,10 +72,7 @@ const Indicator = GObject.registerClass(
       );
 
       matchedEmojis.forEach((emoji) => {
-        let drawing = new St.BoxLayout({
-          vertical: false,
-          x_expand: true,
-        });
+        let drawing = newBoxLayout(false, { x_expand: true });
 
         let nameLabel = new St.Label({
           text: emoji.name,
@@ -124,11 +130,12 @@ function loadEmojiData() {
     let file = Gio.File.new_for_path(DATA_FILE_PATH);
     let [ok, content] = file.load_contents(null);
     if (ok) {
-      return JSON.parse(content);
+      return JSON.parse(new TextDecoder().decode(content));
     }
   } catch (e) {
-    logError(e, "Failed to load emoji data");
+    console.error("Failed to load emoji data", e);
   }
+  return [];
 }
 
 function saveEmojiData(data) {
@@ -142,6 +149,6 @@ function saveEmojiData(data) {
       null
     );
   } catch (e) {
-    logError(e, "Failed to save emoji data");
+    console.error("Failed to save emoji data", e);
   }
 }

@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Cancel a still-running run for the same branch/PR when a new push arrives,
+# instead of letting both finish and wasting CI minutes on the stale one.
+# Exception: let main's runs finish, since each push there should get a
+# recorded result rather than being superseded.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  lint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run lint
+
+  box-layout-api:
+    name: St.BoxLayout API check (GNOME Shell ${{ matrix.version }})
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # GNOME Shell versions we declare support for in metadata.json,
+          # mapped to an apt-based distro release that actually ships that
+          # version (a non-rolling tag, so this never silently drifts).
+          - version: "46"
+            image: "ubuntu:24.04"
+          - version: "48"
+            image: "debian:13"
+          - version: "50"
+            image: "ubuntu:26.04"
+          - version: "51"
+            image: "ubuntu:26.10"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run St.BoxLayout API check
+        run: ./tests/run-in-container.sh ${{ matrix.version }}

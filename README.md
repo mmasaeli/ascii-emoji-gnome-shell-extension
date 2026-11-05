@@ -46,6 +46,70 @@ The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.c
 - Main code: [`extension.js`](extension.js)
 - Metadata: [`metadata.json`](metadata.json)
 - Stylesheet: [`stylesheet.css`](stylesheet.css)
+- `St.BoxLayout`'s `vertical`/`orientation` property choice: [`boxLayoutCompat.js`](boxLayoutCompat.js)
+
+Both checks below also run automatically in CI on every push/PR (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
+
+### Linting
+
+Requires [Node.js](https://nodejs.org/) and npm.
+
+```sh
+npm install     # one-time, installs ESLint into node_modules/
+npm run lint    # or: npx eslint .
+make lint       # same thing, via the Makefile
+```
+
+Uses the [GJS style guide](https://gjs.guide/guides/gjs/style-guide.html)'s ESLint config ([`eslint.config.js`](eslint.config.js)).
+
+### GNOME Shell API compatibility check
+
+GNOME Shell has changed `St.BoxLayout`'s layout-direction property across versions (`vertical` only in 46/47, both in 48-50, `orientation` only from 51). [`tests/check_box_layout_api.py`](tests/check_box_layout_api.py) verifies the property [`boxLayoutCompat.js`](boxLayoutCompat.js) picks actually exists on the real `St.BoxLayout` for a given version, by installing that version's real `gnome-shell` package in a throwaway [podman](https://podman.io/) container and checking it there - no running shell session needed.
+
+Requires `podman`.
+
+```sh
+make test-46    # check against GNOME Shell 46 (ubuntu:24.04)
+make test-48    # check against GNOME Shell 48 (debian:13)
+make test-50    # check against GNOME Shell 50 (ubuntu:26.04)
+make test-51    # check against GNOME Shell 51 (ubuntu:26.10)
+make test-all   # all of the above
+```
+
+Each `make test-NN` target installs `gnome-shell` + PyGObject fresh inside the container (via [`tests/run-in-container.sh`](tests/run-in-container.sh)), so expect it to take a minute or two, not be instant.
+
+**This is not a substitute for actually running the extension.** It only checks that the property our code picks exists on the real `St.BoxLayout` for that version - it doesn't construct the widget, load `extension.js`, or start a GNOME Shell session, so it can't catch things like a broken `import`, a JS exception in `enable()`, or a UI that doesn't render correctly. See "Manual release testing" below for that.
+
+### Manual release testing
+
+Before releasing a new version, manually verify the extension actually works in a live GNOME Shell session, for each major version in `metadata.json` you can get access to:
+
+1. Symlink this repo into your extensions directory instead of copying it, so edits take effect without reinstalling:
+
+   ```sh
+   ln -sfn "$(pwd)" ~/.local/share/gnome-shell/extensions/ascii-emoji@masood.masaeli
+   gnome-extensions enable ascii-emoji@masood.masaeli
+   ```
+
+2. Install `mutter-devkit` (one-time) - it gives `--devkit` a real window to draw a nested session into, instead of silently failing:
+
+   ```sh
+   sudo dnf install mutter-devkit      # Fedora
+   sudo apt install mutter-devkit      # Debian/Ubuntu, if packaged for your release
+   ```
+
+3. Run a disposable nested session so you're not testing inside your real desktop:
+
+   ```sh
+   dbus-run-session -- gnome-shell --devkit     # GNOME Shell 49+
+   ```
+
+   (On older GNOME Shell, use `--nested` instead of `--devkit`, no extra package needed.)
+4. In the nested window: click the panel icon, confirm the popup opens with no errors, type to filter, and click an emoji to confirm it copies to the clipboard.
+5. Watch for errors while testing with `journalctl -f -o cat /usr/bin/gnome-shell` in another terminal.
+6. Close the nested window (or `Ctrl+C` in its terminal) when done - it leaves your real session untouched.
+
+We looked into automating this fully in CI (mocking GNOME Shell's system D-Bus dependencies, or a full systemd+Xvfb container, similar to [Simon Schneegans' approach](https://schneegans.github.io/tutorials/2022/02/28/gnome-shell-extensions-ci-01)) and deliberately deferred it - real session testing in CI is a meaningfully larger investment than the API compatibility check above, so for now it's a manual pre-release step instead.
 
 ## License
 
