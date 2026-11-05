@@ -1,5 +1,7 @@
 # ASCII Emoji/Unicode Kaomoji GNOME Shell Extension
 
+[![CI](https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension/actions/workflows/ci.yml/badge.svg)](https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension/actions/workflows/ci.yml)
+
 A GNOME Shell extension that lets you quickly search and copy Unicode Kaomoji/ASCII emojis from your panel.
 
 The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.com/].
