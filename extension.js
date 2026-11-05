@@ -15,6 +15,13 @@ import * as Config from "resource:///org/gnome/shell/misc/config.js";
 
 import { newBoxLayout as _newBoxLayout } from "./boxLayoutCompat.js";
 
+Gio._promisify(Gio.File.prototype, "load_contents_async");
+Gio._promisify(
+  Gio.File.prototype,
+  "replace_contents_bytes_async",
+  "replace_contents_finish"
+);
+
 const SHELL_MAJOR_VERSION = parseInt(Config.PACKAGE_VERSION.split(".")[0], 10);
 
 function newBoxLayout(vertical, props = {}) {
@@ -58,8 +65,16 @@ const Indicator = GObject.registerClass(
 
       this.clipboard = St.Clipboard.get_default();
 
-      this._emojiData = loadEmojiData();
-      this._refreshItems();
+      this._emojiData = [];
+      this._destroyed = false;
+      this.connect("destroy", () => {
+        this._destroyed = true;
+      });
+      loadEmojiData().then((data) => {
+        if (this._destroyed) return;
+        this._emojiData = data;
+        this._refreshItems();
+      });
     }
 
     _refreshItems() {
@@ -131,30 +146,30 @@ const USER_DATA_DIR = GLib.build_filenamev([
 ]);
 const COUNTS_FILE_PATH = GLib.build_filenamev([USER_DATA_DIR, "counts.json"]);
 
-function readJson(path) {
+async function readJson(path) {
   const file = Gio.File.new_for_path(path);
-  const [ok, content] = file.load_contents(null);
-  return ok ? JSON.parse(new TextDecoder().decode(content)) : null;
+  const [content] = await file.load_contents_async(null);
+  return JSON.parse(new TextDecoder().decode(content));
 }
 
-function loadCounts() {
+async function loadCounts() {
   try {
     if (GLib.file_test(COUNTS_FILE_PATH, GLib.FileTest.EXISTS))
-      return readJson(COUNTS_FILE_PATH) ?? {};
+      return (await readJson(COUNTS_FILE_PATH)) ?? {};
   } catch (e) {
     console.error("Failed to load emoji counts", e);
   }
   return {};
 }
 
-function loadEmojiData() {
+async function loadEmojiData() {
   let data = [];
   try {
-    data = readJson(BUNDLED_DATA_PATH) ?? [];
+    data = (await readJson(BUNDLED_DATA_PATH)) ?? [];
   } catch (e) {
     console.error("Failed to load emoji data", e);
   }
-  const counts = loadCounts();
+  const counts = await loadCounts();
   data.forEach((emoji) => {
     emoji.count = counts[emoji.name] ?? emoji.count ?? 0;
   });
@@ -162,15 +177,16 @@ function loadEmojiData() {
   return data;
 }
 
-function saveEmojiData(data) {
+async function saveEmojiData(data) {
   try {
     GLib.mkdir_with_parents(USER_DATA_DIR, 0o755);
     const counts = {};
     data.forEach((emoji) => {
       if (emoji.count > 0) counts[emoji.name] = emoji.count;
     });
-    Gio.File.new_for_path(COUNTS_FILE_PATH).replace_contents(
-      JSON.stringify(counts),
+    const bytes = new GLib.Bytes(new TextEncoder().encode(JSON.stringify(counts)));
+    await Gio.File.new_for_path(COUNTS_FILE_PATH).replace_contents_bytes_async(
+      bytes,
       null,
       false,
       Gio.FileCreateFlags.NONE,
