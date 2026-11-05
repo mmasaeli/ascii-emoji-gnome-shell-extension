@@ -48,8 +48,9 @@ The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.c
 - Metadata: [`metadata.json`](metadata.json)
 - Stylesheet: [`stylesheet.css`](stylesheet.css)
 - `St.BoxLayout`'s `vertical`/`orientation` property choice: [`boxLayoutCompat.js`](boxLayoutCompat.js)
+- Emoji list + persistent usage counts: [`storage.js`](storage.js)
 
-Both checks below also run automatically in CI on every push/PR (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
+The automated checks below (linting, API compatibility, storage test, Shexli) also run in CI on every push/PR (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
 
 ### Linting
 
@@ -80,6 +81,30 @@ make test-all   # all of the above
 Each `make test-NN` target installs `gnome-shell` + PyGObject fresh inside the container (via [`tests/run-in-container.sh`](tests/run-in-container.sh)), so expect it to take a minute or two, not be instant.
 
 **This is not a substitute for actually running the extension.** It only checks that the property our code picks exists on the real `St.BoxLayout` for that version - it doesn't construct the widget, load `extension.js`, or start a GNOME Shell session, so it can't catch things like a broken `import`, a JS exception in `enable()`, or a UI that doesn't render correctly. See "Manual release testing" below for that.
+
+### Storage runtime test
+
+[`tests/storage.test.js`](tests/storage.test.js) runs [`storage.js`](storage.js) under real `gjs` against temporary directories (your real data is never touched). It covers the "counts survive an update" behaviour, emojis added or removed by an update, a corrupt `counts.json`, and a missing emoji list. It exercises the real async `Gio` calls, so it catches breakage that static analysis can't.
+
+```sh
+make storage-test                # in a clean Ubuntu container via podman
+gjs -m tests/storage.test.js     # or directly, if gjs is installed
+```
+
+### Shexli (extensions.gnome.org pre-review check)
+
+[Shexli](https://pypi.org/project/shexli/) is a static analyzer for the packaging and review issues extensions.gnome.org flags. `make shexli` runs it on a staged copy holding exactly the files that ship in the zip, inside a pinned `python:3.12` container (a very new system Python can lack prebuilt wheels for one of its dependencies).
+
+```sh
+make shexli
+```
+
+Shexli always exits 0, so [`tests/check_shexli.py`](tests/check_shexli.py) gates on its JSON report and fails on any finding except two documented ones:
+
+- `EGO-A-005` (clipboard needs reviewer scrutiny): allowed while `metadata.json`'s description declares clipboard use, as the review guidelines require.
+- `EGO-M-004` (`shell-version` has a "future release"): Shexli 0.2.x hardcodes anything above GNOME 50 as implausible. Allowed only while every entry is a plain integer, so malformed versions still fail. Revisit when bumping the pinned Shexli version in [`tests/run-shexli.sh`](tests/run-shexli.sh).
+
+The check also fails if a shipped `.js` file imports a file that is not in the package.
 
 ### Manual release testing
 
@@ -118,15 +143,22 @@ We looked into automating this fully in CI (mocking GNOME Shell's system D-Bus d
 make package
 ```
 
-This runs the linter, **bumps the integer `version` in `metadata.json` by 1** (extensions.gnome.org requires a higher version for every upload), and then builds `dist/<uuid>.v<version>.shell-extension.zip`. The zip contains only the files GNOME Shell needs at runtime: `extension.js`, `boxLayoutCompat.js`, `emojis.json`, `metadata.json` and `LICENSE`.
+This runs, in order:
 
-- Every run bumps the version, including local test builds. If lint fails, nothing is bumped or built.
+1. the linter,
+2. the storage runtime test,
+3. Shexli,
+4. **a bump of the integer `version` in `metadata.json` by 1** (extensions.gnome.org requires a higher version for every upload),
+5. the build of `dist/<uuid>.zip`, containing only the files GNOME Shell needs at runtime: `extension.js`, `boxLayoutCompat.js`, `storage.js`, `emojis.json`, `metadata.json` and `LICENSE`.
+
+- Every successful run bumps the version, including local test builds. If any check fails, nothing is bumped or built.
 - Commit the bumped `metadata.json` together with the release.
+- Needs `podman` (for the container-based checks), Node.js and `zip`.
 - To try the zip locally: `gnome-extensions install --force dist/*.zip`, then log out and back in (Wayland) or restart the shell (X11).
 - To publish, upload the zip at <https://extensions.gnome.org/upload/>.
 - `make clean` removes the `dist/` folder.
 
-Follow the "Manual release testing" steps above before packaging.
+The checks do not replace the "Manual release testing" steps above: follow those before packaging.
 
 ## License
 

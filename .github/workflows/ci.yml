@@ -25,6 +25,31 @@ jobs:
       - run: npm ci
       - run: npm run lint
 
+  storage-test:
+    name: Storage runtime test (gjs)
+    runs-on: ubuntu-latest
+    container:
+      # Keep in sync with STORAGE_TEST_IMAGE in the Makefile.
+      image: ubuntu:24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./tests/run-storage-test.sh
+
+  shexli:
+    name: Shexli (extensions.gnome.org pre-review check)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Keep the Python minor version in sync with SHEXLI_IMAGE in the
+      # Makefile: newer Pythons can lack prebuilt tree-sitter wheels.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Stage exactly the files that ship in the zip (list lives in the
+      # Makefile, so it can't drift from the release package).
+      - run: make stage
+      - run: ./tests/run-shexli.sh dist/stage
+
   box-layout-api:
     name: St.BoxLayout API check (GNOME Shell ${{ matrix.version }})
     runs-on: ubuntu-latest

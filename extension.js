@@ -1,7 +1,5 @@
 import St from "gi://St";
 import GObject from "gi://GObject";
-import Gio from "gi://Gio";
-import GLib from "gi://GLib";
 import Clutter from "gi://Clutter";
 
 import {
@@ -14,13 +12,9 @@ import * as Main from "resource:///org/gnome/shell/ui/main.js";
 import * as Config from "resource:///org/gnome/shell/misc/config.js";
 
 import { newBoxLayout as _newBoxLayout } from "./boxLayoutCompat.js";
+import { createStorage } from "./storage.js";
 
-Gio._promisify(Gio.File.prototype, "load_contents_async");
-Gio._promisify(
-  Gio.File.prototype,
-  "replace_contents_bytes_async",
-  "replace_contents_finish"
-);
+const { loadEmojiData, saveEmojiData } = createStorage();
 
 const SHELL_MAJOR_VERSION = parseInt(Config.PACKAGE_VERSION.split(".")[0], 10);
 
@@ -128,71 +122,5 @@ export default class AsciiEmojiExtension extends Extension {
   disable() {
     this._indicator.destroy();
     this._indicator = null;
-  }
-}
-
-// The bundled emoji list ships with the extension and is replaced on every
-// update, so it is treated as read-only.
-const BUNDLED_DATA_PATH = GLib.build_filenamev([
-  GLib.path_get_dirname(GLib.filename_from_uri(import.meta.url)[0]),
-  "emojis.json",
-]);
-
-// User state (usage counts) lives outside the extension directory so that it
-// survives updates and reinstalls.
-const USER_DATA_DIR = GLib.build_filenamev([
-  GLib.get_user_data_dir(),
-  "ascii-emoji@masood.masaeli",
-]);
-const COUNTS_FILE_PATH = GLib.build_filenamev([USER_DATA_DIR, "counts.json"]);
-
-async function readJson(path) {
-  const file = Gio.File.new_for_path(path);
-  const [content] = await file.load_contents_async(null);
-  return JSON.parse(new TextDecoder().decode(content));
-}
-
-async function loadCounts() {
-  try {
-    if (GLib.file_test(COUNTS_FILE_PATH, GLib.FileTest.EXISTS))
-      return (await readJson(COUNTS_FILE_PATH)) ?? {};
-  } catch (e) {
-    console.error("Failed to load emoji counts", e);
-  }
-  return {};
-}
-
-async function loadEmojiData() {
-  let data = [];
-  try {
-    data = (await readJson(BUNDLED_DATA_PATH)) ?? [];
-  } catch (e) {
-    console.error("Failed to load emoji data", e);
-  }
-  const counts = await loadCounts();
-  data.forEach((emoji) => {
-    emoji.count = counts[emoji.name] ?? emoji.count ?? 0;
-  });
-  data.sort((a, b) => b.count - a.count);
-  return data;
-}
-
-async function saveEmojiData(data) {
-  try {
-    GLib.mkdir_with_parents(USER_DATA_DIR, 0o755);
-    const counts = {};
-    data.forEach((emoji) => {
-      if (emoji.count > 0) counts[emoji.name] = emoji.count;
-    });
-    const bytes = new GLib.Bytes(new TextEncoder().encode(JSON.stringify(counts)));
-    await Gio.File.new_for_path(COUNTS_FILE_PATH).replace_contents_bytes_async(
-      bytes,
-      null,
-      false,
-      Gio.FileCreateFlags.NONE,
-      null
-    );
-  } catch (e) {
-    console.error("Failed to save emoji counts", e);
   }
 }
