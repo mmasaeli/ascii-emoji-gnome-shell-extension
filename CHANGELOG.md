@@ -4,6 +4,21 @@ All notable changes to this extension are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions are the
 single integers used by extensions.gnome.org (`version` in `metadata.json`).
 
+## [9] - 2026-11-09
+
+### Fixed
+
+- Restored backslashes that were lost from the `help`, `kiahh` and `surrender`
+  emojis, and the original spacing in `blubby`, `execution` and `lennyflip`.
+  The list was checked against asciimoji.com.
+
+### Changed
+
+- The search box is focused as soon as the menu opens, so you can type
+  straight away.
+- Every emoji now has more search keywords (synonyms, feelings, objects), so
+  it is easier to find, for example `mad`, `money`, `table` or `idk`.
+
 ## [8] - 2026-11-05
 
 ### Fixed

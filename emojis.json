@@ -1,650 +1,1282 @@
 [
-  { "name": "acid", "keyword": "acid", "emoji": "⊂(◉‿◉)つ" },
-  { "name": "afraid", "keyword": "afraid", "emoji": "(ㆆ _ ㆆ)" },
-  { "name": "alpha", "keyword": "alpha", "emoji": "α" },
-  { "name": "angel", "keyword": "angel", "emoji": "☜(⌒▽⌒)☞" },
-  { "name": "angry", "keyword": "angry", "emoji": "•`_´•" },
+  {
+    "name": "acid",
+    "keyword": "acid,lsd,trip,psychedelic,drugs",
+    "emoji": "⊂(◉‿◉)つ"
+  },
+  {
+    "name": "afraid",
+    "keyword": "afraid,scared,fear,frightened,terrified",
+    "emoji": "(ㆆ _ ㆆ)"
+  },
+  { "name": "alpha", "keyword": "alpha,greek,letter,a", "emoji": "α" },
+  {
+    "name": "angel",
+    "keyword": "angel,halo,innocent,heaven,point",
+    "emoji": "☜(⌒▽⌒)☞"
+  },
+  {
+    "name": "angry",
+    "keyword": "angry,mad,annoyed,furious,grr",
+    "emoji": "•`_´•"
+  },
   {
     "name": "arrowhead",
-    "keyword": "arrowhead",
+    "keyword": "arrowhead,arrow,eyes,zorro",
     "emoji": "⤜(ⱺ ʖ̯ⱺ)⤏"
   },
-  { "name": "ass", "keyword": "ass,butt", "emoji": "(‿|‿)" },
-  { "name": "awkward", "keyword": "awkward", "emoji": "•͡˘㇁•͡˘" },
-  { "name": "bear", "keyword": "bear,koala", "emoji": "ʕ·͡ᴥ·ʔ﻿" },
+  {
+    "name": "ass",
+    "keyword": "ass,butt,bum,booty,rear,behind",
+    "emoji": "(‿|‿)"
+  },
+  {
+    "name": "awkward",
+    "keyword": "awkward,uncomfortable,embarrassed,cringe,hmm",
+    "emoji": "•͡˘㇁•͡˘"
+  },
+  {
+    "name": "bear",
+    "keyword": "bear,koala,teddy,animal,cute",
+    "emoji": "ʕ·͡ᴥ·ʔ﻿"
+  },
   {
     "name": "bearflip",
-    "keyword": "bearflip",
+    "keyword": "bearflip,table,flip,angry,rage",
     "emoji": "ʕノ•ᴥ•ʔノ ︵ ┻━┻"
   },
-  { "name": "bearhug", "keyword": "bearhug", "emoji": "ʕっ•ᴥ•ʔっ" },
-  { "name": "because", "keyword": "because,since", "emoji": "∵" },
-  { "name": "beta", "keyword": "beta", "emoji": "β" },
-  { "name": "bigheart", "keyword": "bigheart", "emoji": "❤" },
-  { "name": "bitcoin", "keyword": "bitcoin", "emoji": "₿" },
-  { "name": "blackeye", "keyword": "blackeye", "emoji": "0__#" },
-  { "name": "blubby", "keyword": "blubby", "emoji": "( 0 _ 0 )" },
-  { "name": "blush", "keyword": "blush", "emoji": "(˵ ͡° ͜ʖ ͡°˵)" },
+  {
+    "name": "bearhug",
+    "keyword": "bearhug,hug,cuddle,embrace",
+    "emoji": "ʕっ•ᴥ•ʔっ"
+  },
+  {
+    "name": "because",
+    "keyword": "because,since,reason,math,symbol",
+    "emoji": "∵"
+  },
+  { "name": "beta", "keyword": "beta,greek,letter,b", "emoji": "β" },
+  { "name": "bigheart", "keyword": "bigheart,love,heart,symbol", "emoji": "❤" },
+  {
+    "name": "bitcoin",
+    "keyword": "bitcoin,btc,crypto,money,currency",
+    "emoji": "₿"
+  },
+  {
+    "name": "blackeye",
+    "keyword": "blackeye,punch,bruise,fight,shiner",
+    "emoji": "0__#"
+  },
+  {
+    "name": "blubby",
+    "keyword": "blubby,fish,mouth,stunned,shocked",
+    "emoji": "(      0    _   0    )"
+  },
+  {
+    "name": "blush",
+    "keyword": "blush,shy,embarrassed,flustered,cute",
+    "emoji": "(˵ ͡° ͜ʖ ͡°˵)"
+  },
   {
     "name": "bond",
-    "keyword": "bond,007",
+    "keyword": "bond,007,spy,agent,gun,james",
     "emoji": "┌( ͝° ͜ʖ͡°)=ε/̵͇̿̿/’̿’̿ ̿"
   },
-  { "name": "boobs", "keyword": "boobs", "emoji": "( . Y . )" },
-  { "name": "bored", "keyword": "bored", "emoji": "(-_-)" },
-  { "name": "bribe", "keyword": "bribe", "emoji": "( •͡˘ _•͡˘)ノð" },
+  {
+    "name": "boobs",
+    "keyword": "boobs,chest,breasts,bust",
+    "emoji": "( . Y . )"
+  },
+  { "name": "bored", "keyword": "bored,meh,tired,dull,blah", "emoji": "(-_-)" },
+  {
+    "name": "bribe",
+    "keyword": "bribe,money,pay,cash,corrupt",
+    "emoji": "( •͡˘ _•͡˘)ノð"
+  },
   {
     "name": "bubbles",
-    "keyword": "bubbles",
+    "keyword": "bubbles,soap,blow,fun,happy",
     "emoji": "( ˘ ³˘)ノ°ﾟº❍｡"
   },
-  { "name": "butterfly", "keyword": "butterfly", "emoji": "ƸӜƷ" },
-  { "name": "cat", "keyword": "cat", "emoji": "(= ФェФ=)" },
+  {
+    "name": "butterfly",
+    "keyword": "butterfly,insect,wings,nature",
+    "emoji": "ƸӜƷ"
+  },
+  {
+    "name": "cat",
+    "keyword": "cat,kitty,kitten,pet,animal,meow",
+    "emoji": "(= ФェФ=)"
+  },
   {
     "name": "catlenny",
-    "keyword": "catlenny",
+    "keyword": "catlenny,cat,lenny,kitty,meme",
     "emoji": "( ͡° ᴥ ͡°)﻿"
   },
-  { "name": "check", "keyword": "check", "emoji": "✔" },
-  { "name": "cheer", "keyword": "cheer", "emoji": "※\\(^o^)/※" },
-  { "name": "chubby", "keyword": "chubby", "emoji": "╭(ʘ̆~◞౪◟~ʘ̆)╮" },
-  { "name": "claro", "keyword": "claro", "emoji": "(͡ ° ͜ʖ ͡ °)" },
+  {
+    "name": "check",
+    "keyword": "check,checkmark,tick,done,yes,correct,ok",
+    "emoji": "✔"
+  },
+  {
+    "name": "cheer",
+    "keyword": "cheer,yay,celebrate,hooray,happy,woo",
+    "emoji": "※\\(^o^)/※"
+  },
+  {
+    "name": "chubby",
+    "keyword": "chubby,fat,round,fluffy,cute",
+    "emoji": "╭(ʘ̆~◞౪◟~ʘ̆)╮"
+  },
+  {
+    "name": "claro",
+    "keyword": "claro,sure,of course,obviously,lenny",
+    "emoji": "(͡ ° ͜ʖ ͡ °)"
+  },
   {
     "name": "clique",
-    "keyword": "clique,gang, squad",
+    "keyword": "clique,gang,squad,group,team,crowd,friends",
     "emoji": "ヽ༼ ຈل͜ຈ༼ ▀̿̿Ĺ̯̿̿▀̿ ̿༽Ɵ͆ل͜Ɵ͆ ༽ﾉ"
   },
-  { "name": "cloud", "keyword": "cloud", "emoji": "☁" },
-  { "name": "club", "keyword": "club", "emoji": "♣" },
-  { "name": "coffee", "keyword": "coffee,cuppa", "emoji": "c[_]" },
-  { "name": "cmd", "keyword": "cmd,command", "emoji": "⌘" },
+  { "name": "cloud", "keyword": "cloud,weather,sky,symbol", "emoji": "☁" },
+  { "name": "club", "keyword": "club,cards,suit,symbol,clubs", "emoji": "♣" },
+  {
+    "name": "coffee",
+    "keyword": "coffee,cuppa,cup,drink,tea,caffeine,mug",
+    "emoji": "c[_]"
+  },
+  {
+    "name": "cmd",
+    "keyword": "cmd,command,mac,key,apple,symbol",
+    "emoji": "⌘"
+  },
   {
     "name": "cool",
-    "keyword": "cool,csi",
+    "keyword": "cool,csi,sunglasses,shades,awesome",
     "emoji": "(•_•) ( •_•)>⌐■-■ (⌐■_■)"
   },
-  { "name": "copy", "keyword": "copy,c", "emoji": "©" },
-  { "name": "creep", "keyword": "creep", "emoji": "ԅ(≖‿≖ԅ)" },
+  { "name": "copy", "keyword": "copy,c,copyright,symbol", "emoji": "©" },
+  {
+    "name": "creep",
+    "keyword": "creep,creepy,sly,sneaky,weird",
+    "emoji": "ԅ(≖‿≖ԅ)"
+  },
   {
     "name": "creepcute",
-    "keyword": "creepcute",
+    "keyword": "creepcute,creepy,cute,weird,shy",
     "emoji": "ƪ(ړײ)‎ƪ​​"
   },
-  { "name": "crim3s", "keyword": "crim3s", "emoji": "( ✜︵✜ )" },
-  { "name": "cross", "keyword": "cross", "emoji": "†" },
-  { "name": "cry", "keyword": "cry", "emoji": "(╥﹏╥)" },
+  {
+    "name": "crim3s",
+    "keyword": "crim3s,crimes,evil,criminal",
+    "emoji": "( ✜︵✜ )"
+  },
+  {
+    "name": "cross",
+    "keyword": "cross,dagger,obelisk,symbol,christian",
+    "emoji": "†"
+  },
+  {
+    "name": "cry",
+    "keyword": "cry,sad,tears,weep,sob,upset",
+    "emoji": "(╥﹏╥)"
+  },
   {
     "name": "crywave",
-    "keyword": "crywave",
+    "keyword": "crywave,sad,goodbye,bye,tears,wave",
     "emoji": "( ╥﹏╥) ノシ"
   },
-  { "name": "cute", "keyword": "cute", "emoji": "(｡◕‿‿◕｡)" },
-  { "name": "d1", "keyword": "d1", "emoji": "⚀" },
-  { "name": "d2", "keyword": "d2", "emoji": "⚁" },
-  { "name": "d3", "keyword": "d3", "emoji": "⚂" },
-  { "name": "d4", "keyword": "d4", "emoji": "⚃" },
-  { "name": "d5", "keyword": "d5", "emoji": "⚄" },
-  { "name": "d6", "keyword": "d6", "emoji": "⚅" },
-  { "name": "dab", "keyword": "dab", "emoji": "ヽ( •_)ᕗ" },
+  {
+    "name": "cute",
+    "keyword": "cute,adorable,sweet,kawaii,aww,happy",
+    "emoji": "(｡◕‿‿◕｡)"
+  },
+  { "name": "d1", "keyword": "d1,dice,die,one,1,game", "emoji": "⚀" },
+  { "name": "d2", "keyword": "d2,dice,die,two,2,game", "emoji": "⚁" },
+  { "name": "d3", "keyword": "d3,dice,die,three,3,game", "emoji": "⚂" },
+  { "name": "d4", "keyword": "d4,dice,die,four,4,game", "emoji": "⚃" },
+  { "name": "d5", "keyword": "d5,dice,die,five,5,game", "emoji": "⚄" },
+  { "name": "d6", "keyword": "d6,dice,die,six,6,game", "emoji": "⚅" },
+  {
+    "name": "dab",
+    "keyword": "dab,dabbing,dance,swag,celebrate",
+    "emoji": "ヽ( •_)ᕗ"
+  },
   {
     "name": "damnyou",
-    "keyword": "damnyou",
+    "keyword": "damnyou,curse,angry,revenge,mad,shake fist",
     "emoji": "(ᕗ ͠° ਊ ͠° )ᕗ"
   },
-  { "name": "dance", "keyword": "dance", "emoji": "ᕕ(⌐■_■)ᕗ ♪♬" },
-  { "name": "dead", "keyword": "dead", "emoji": "x⸑x" },
+  {
+    "name": "dance",
+    "keyword": "dance,dancing,party,music,disco,groove",
+    "emoji": "ᕕ(⌐■_■)ᕗ ♪♬"
+  },
+  {
+    "name": "dead",
+    "keyword": "dead,dies,death,rip,x,lifeless",
+    "emoji": "x⸑x"
+  },
   {
     "name": "dealwithit",
-    "keyword": "dealwithit,dwi",
+    "keyword": "dealwithit,dwi,sunglasses,shades,cool,deal with it,swag",
     "emoji": "(⌐■_■)"
   },
-  { "name": "delta", "keyword": "delta", "emoji": "Δ" },
+  {
+    "name": "delta",
+    "keyword": "delta,greek,letter,change,triangle,math",
+    "emoji": "Δ"
+  },
   {
     "name": "depressed",
-    "keyword": "depressed",
+    "keyword": "depressed,sad,down,unhappy,blue,gloomy",
     "emoji": "(︶︹︶)"
   },
-  { "name": "derp", "keyword": "derp", "emoji": "☉ ‿ ⚆" },
-  { "name": "diamond", "keyword": "diamond", "emoji": "♦" },
-  { "name": "dj", "keyword": "dj", "emoji": "d[-_-]b" },
-  { "name": "dog", "keyword": "dog", "emoji": "(◕ᴥ◕ʋ)" },
-  { "name": "dollar", "keyword": "dollar", "emoji": "$" },
-  { "name": "dong", "keyword": "dong", "emoji": "(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄" },
-  { "name": "donger", "keyword": "donger", "emoji": "ヽ༼ຈل͜ຈ༽ﾉ" },
+  {
+    "name": "derp",
+    "keyword": "derp,silly,dumb,stupid,goofy,crazy",
+    "emoji": "☉ ‿ ⚆"
+  },
+  {
+    "name": "diamond",
+    "keyword": "diamond,cards,suit,symbol,gem,diamonds",
+    "emoji": "♦"
+  },
+  {
+    "name": "dj",
+    "keyword": "dj,music,headphones,party,beats,disc jockey",
+    "emoji": "d[-_-]b"
+  },
+  {
+    "name": "dog",
+    "keyword": "dog,puppy,pet,animal,woof,doggo",
+    "emoji": "(◕ᴥ◕ʋ)"
+  },
+  {
+    "name": "dollar",
+    "keyword": "dollar,money,usd,currency,cash,symbol",
+    "emoji": "$"
+  },
+  {
+    "name": "dong",
+    "keyword": "dong,sunglasses,swag,lenny",
+    "emoji": "(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄"
+  },
+  {
+    "name": "donger",
+    "keyword": "donger,raise,hype,wow,lenny",
+    "emoji": "ヽ༼ຈل͜ຈ༽ﾉ"
+  },
   {
     "name": "dontcare",
-    "keyword": "dontcare,idc",
+    "keyword": "dontcare,idc,whatever,meh,shrug,indifferent,idk",
     "emoji": "(- ʖ̯-)"
   },
   {
     "name": "dontwant",
-    "keyword": "dontwant",
+    "keyword": "dontwant,donotwant,no,refuse,reject,angry",
     "emoji": "ヽ(｀Д´)ﾉ"
   },
-  { "name": "dope", "keyword": "dope", "emoji": "<(^_^)>" },
-  { "name": "doubleflat", "keyword": "doubleflat", "emoji": "𝄫" },
-  { "name": "doublesharp", "keyword": "doublesharp", "emoji": "𝄪" },
+  {
+    "name": "dope",
+    "keyword": "dope,cool,awesome,nice,sweet,rad",
+    "emoji": "<(^_^)>"
+  },
+  {
+    "name": "doubleflat",
+    "keyword": "doubleflat,music,note,symbol,flat",
+    "emoji": "𝄫"
+  },
+  {
+    "name": "doublesharp",
+    "keyword": "doublesharp,music,note,symbol,sharp",
+    "emoji": "𝄪"
+  },
   {
     "name": "doubletableflip",
-    "keyword": "doubletableflip",
+    "keyword": "doubletableflip,flip,table,angry,rage,two",
     "emoji": "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻"
   },
-  { "name": "down", "keyword": "down", "emoji": "↓" },
-  { "name": "duckface", "keyword": "duckface", "emoji": "(・3・)" },
+  { "name": "down", "keyword": "down,arrow,south,below,symbol", "emoji": "↓" },
+  {
+    "name": "duckface",
+    "keyword": "duckface,kiss,pout,selfie,lips",
+    "emoji": "(・3・)"
+  },
   {
     "name": "duel",
-    "keyword": "duel",
+    "keyword": "duel,fight,sword,battle,fencing",
     "emoji": "ᕕ(╭ರ╭ ͟ʖ╮•́)⊃¤=(————-"
   },
-  { "name": "duh", "keyword": "duh", "emoji": "(≧︿≦)" },
-  { "name": "dunno", "keyword": "dunno", "emoji": "¯\\(°_o)/¯" },
-  { "name": "ebola", "keyword": "ebola", "emoji": "ᴇʙᴏʟᴀ" },
+  {
+    "name": "duh",
+    "keyword": "duh,obvious,sigh,annoyed,dumb",
+    "emoji": "(≧︿≦)"
+  },
+  {
+    "name": "dunno",
+    "keyword": "dunno,dunnolol,shrug,idk,confused,unsure,who knows",
+    "emoji": "¯\\(°_o)/¯"
+  },
+  {
+    "name": "ebola",
+    "keyword": "ebola,virus,disease,sick,small caps",
+    "emoji": "ᴇʙᴏʟᴀ"
+  },
   {
     "name": "eeriemob",
-    "keyword": "eeriemob",
+    "keyword": "eeriemob,creepy,scary,spooky,crowd,horror",
     "emoji": "(-(-_-(-_(-_(-_-)_-)-_-)_-)_-)-)"
   },
-  { "name": "emptystar", "keyword": "emptystar", "emoji": "☆" },
+  {
+    "name": "emptystar",
+    "keyword": "emptystar,star,outline,favorite,rating,white",
+    "emoji": "☆"
+  },
   {
     "name": "emptytriangle",
-    "keyword": "emptytriangle,t2",
+    "keyword": "emptytriangle,t2,triangle,outline,white,shape",
     "emoji": "△"
   },
-  { "name": "endure", "keyword": "endure", "emoji": "(҂◡_◡) ᕤ" },
+  {
+    "name": "endure",
+    "keyword": "endure,strong,suffer,hold on,tough,struggle",
+    "emoji": "(҂◡_◡) ᕤ"
+  },
   {
     "name": "envelope",
-    "keyword": "envelope,letter",
+    "keyword": "envelope,letter,mail,email,message",
     "emoji": "✉︎"
   },
-  { "name": "epsilon", "keyword": "epsilon", "emoji": "ɛ" },
-  { "name": "euro", "keyword": "euro", "emoji": "€" },
-  { "name": "evil", "keyword": "evil", "emoji": "ψ(｀∇´)ψ" },
+  { "name": "epsilon", "keyword": "epsilon,greek,letter,e", "emoji": "ɛ" },
+  { "name": "euro", "keyword": "euro,money,eur,currency,symbol", "emoji": "€" },
+  {
+    "name": "evil",
+    "keyword": "evil,devil,demon,mischief,plotting,bad",
+    "emoji": "ψ(｀∇´)ψ"
+  },
   {
     "name": "evillenny",
-    "keyword": "evillenny",
+    "keyword": "evillenny,evil,lenny,bad,mischief",
     "emoji": "(͠≖ ͜ʖ͠≖)"
   },
   {
     "name": "excited",
-    "keyword": "excited",
+    "keyword": "excited,happy,sparkle,thrilled,yay,magic",
     "emoji": "(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧"
   },
   {
     "name": "execution",
-    "keyword": "execution",
-    "emoji": "(⌐■_■)︻╦╤─ (╥﹏╥)"
+    "keyword": "execution,gun,shoot,kill,cry,sad",
+    "emoji": "(⌐■_■)︻╦╤─   (╥﹏╥)"
   },
   {
     "name": "facebook",
-    "keyword": "facebook",
+    "keyword": "facebook,rage,flip,angry,table,social",
     "emoji": "(╯°□°)╯︵ ʞooqǝɔɐɟ"
   },
-  { "name": "facepalm", "keyword": "facepalm", "emoji": "(－‸ლ)" },
+  {
+    "name": "facepalm",
+    "keyword": "facepalm,fail,embarrassed,disappointed,smh,doh",
+    "emoji": "(－‸ლ)"
+  },
   {
     "name": "fancytext",
-    "keyword": "fancytext",
+    "keyword": "fancytext,fancy,font,text,style,generator",
     "emoji": "вєωαяє, ι αм ƒαη¢у!"
   },
-  { "name": "fart", "keyword": "fart", "emoji": "(ˆ⺫ˆ๑)<3" },
-  { "name": "fight", "keyword": "fight", "emoji": "(ง •̀_•́)ง" },
-  { "name": "finn", "keyword": "finn", "emoji": "| (• ◡•)|" },
-  { "name": "fish", "keyword": "fish", "emoji": "<\"(((<3" },
-  { "name": "5", "keyword": "5,five", "emoji": "卌" },
-  { "name": "flat", "keyword": "flat,bemolle", "emoji": "♭" },
-  { "name": "flexing", "keyword": "flexing", "emoji": "ᕙ(`▽´)ᕗ" },
+  {
+    "name": "fart",
+    "keyword": "fart,gas,toot,stink,smell,gross",
+    "emoji": "(ˆ⺫ˆ๑)<3"
+  },
+  {
+    "name": "fight",
+    "keyword": "fight,fists,box,battle,combat,brawl",
+    "emoji": "(ง •̀_•́)ง"
+  },
+  {
+    "name": "finn",
+    "keyword": "finn,adventure time,cartoon,hat,character",
+    "emoji": "| (• ◡•)|"
+  },
+  {
+    "name": "fish",
+    "keyword": "fish,animal,sea,ocean,swim,pisces",
+    "emoji": "<\"(((<3"
+  },
+  { "name": "5", "keyword": "5,five,tally,count,number", "emoji": "卌" },
+  { "name": "flat", "keyword": "flat,bemolle,music,note,symbol", "emoji": "♭" },
+  {
+    "name": "flexing",
+    "keyword": "flexing,strong,muscle,arm,biceps,gym",
+    "emoji": "ᕙ(`▽´)ᕗ"
+  },
   {
     "name": "fliptext",
-    "keyword": "fliptext",
+    "keyword": "fliptext,flip,upside down,text,reverse,generator",
     "emoji": "ǝןqɐʇ ɐ ǝʞıן ǝɯ dıןɟ"
   },
   {
     "name": "fliptexttable",
-    "keyword": "fliptexttable",
+    "keyword": "fliptexttable,flip,table,text,upside down",
     "emoji": "(ノ ゜Д゜)ノ ︵ ǝןqɐʇ ɐ ǝʞıן ʇxǝʇ dıןɟ"
   },
   {
     "name": "flipped",
-    "keyword": "flipped,heavytable",
+    "keyword": "flipped,heavytable,table,heavy,rage,angry",
     "emoji": "┬─┬﻿ ︵ /(.□. \\）"
   },
-  { "name": "flower", "keyword": "flower,flor", "emoji": "(✿◠‿◠)" },
-  { "name": "f", "keyword": "f", "emoji": "✿" },
-  { "name": "fly", "keyword": "fly", "emoji": "─=≡Σ((( つ◕ل͜◕)つ" },
+  {
+    "name": "flower",
+    "keyword": "flower,flor,plant,bloom,blossom,spring",
+    "emoji": "(✿◠‿◠)"
+  },
+  { "name": "f", "keyword": "f,flower,flor,plant", "emoji": "✿" },
+  {
+    "name": "fly",
+    "keyword": "fly,flying,superman,soar,wings,float",
+    "emoji": "─=≡Σ((( つ◕ل͜◕)つ"
+  },
   {
     "name": "friendflip",
-    "keyword": "friendflip",
+    "keyword": "friendflip,table,flip,friends,rage,two",
     "emoji": "(╯°□°)╯︵ ┻━┻ ︵ ╯(°□° ╯)"
   },
-  { "name": "frown", "keyword": "frown", "emoji": "(ღ˘⌣˘ღ)" },
+  {
+    "name": "frown",
+    "keyword": "frown,sad,unhappy,upset,disappointed,pout",
+    "emoji": "(ღ˘⌣˘ღ)"
+  },
   {
     "name": "fuckoff",
-    "keyword": "fuckoff,gtfo",
+    "keyword": "fuckoff,gtfo,leave,go away,angry,rude",
     "emoji": "୧༼ಠ益ಠ╭∩╮༽"
   },
   {
     "name": "fuckyou",
-    "keyword": "fuckyou,fu",
+    "keyword": "fuckyou,fu,rude,offensive,middle finger,angry",
     "emoji": "┌П┐(ಠ_ಠ)"
   },
   {
     "name": "gentleman",
-    "keyword": "gentleman,sir, monocle",
+    "keyword": "gentleman,sir,monocle,fancy,classy,polite",
     "emoji": "ಠ_ರೃ"
   },
-  { "name": "ghast", "keyword": "ghast", "emoji": "= _ =" },
-  { "name": "ghost", "keyword": "ghost", "emoji": "༼ つ ╹ ╹ ༽つ" },
+  {
+    "name": "ghast",
+    "keyword": "ghast,minecraft,ghost,eyes,sad,game",
+    "emoji": "= _ ="
+  },
+  {
+    "name": "ghost",
+    "keyword": "ghost,boo,halloween,spooky,spirit,scary",
+    "emoji": "༼ つ ╹ ╹ ༽つ"
+  },
   {
     "name": "gift",
-    "keyword": "gift,present",
+    "keyword": "gift,present,box,birthday,surprise,christmas",
     "emoji": "(´・ω・)っ由"
   },
-  { "name": "gimme", "keyword": "gimme", "emoji": "༼ つ ◕_◕ ༽つ" },
+  {
+    "name": "gimme",
+    "keyword": "gimme,give,want,please,beg",
+    "emoji": "༼ つ ◕_◕ ༽つ"
+  },
   {
     "name": "givemeyourmoney",
-    "keyword": "givemeyourmoney",
+    "keyword": "givemeyourmoney,money,rob,steal,wallet,mugger",
     "emoji": "(•-•)⌐"
   },
   {
     "name": "glitter",
-    "keyword": "glitter",
+    "keyword": "glitter,sparkle,magic,shine,happy,stars",
     "emoji": "(*・‿・)ノ⌒*:･ﾟ✧"
   },
-  { "name": "glasses", "keyword": "glasses", "emoji": "(⌐ ͡■ ͜ʖ ͡■)" },
+  {
+    "name": "glasses",
+    "keyword": "glasses,sunglasses,shades,cool,swag,lenny",
+    "emoji": "(⌐ ͡■ ͜ʖ ͡■)"
+  },
   {
     "name": "glassesoff",
-    "keyword": "glassesoff",
+    "keyword": "glassesoff,sunglasses,shades,cool,take off,lenny",
     "emoji": "( ͡° ͜ʖ ͡°)ﾉ⌐■-■"
   },
   {
     "name": "glitterderp",
-    "keyword": "glitterderp",
+    "keyword": "glitterderp,sparkle,magic,glitter,derp,silly",
     "emoji": "(ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧"
   },
-  { "name": "gloomy", "keyword": "gloomy", "emoji": "(_゜_゜_)" },
-  { "name": "goatse", "keyword": "goatse", "emoji": "(з๏ε)" },
-  { "name": "gotit", "keyword": "gotit", "emoji": "(☞ﾟ∀ﾟ)☞" },
+  {
+    "name": "gloomy",
+    "keyword": "gloomy,sad,depressed,down,blue,unhappy",
+    "emoji": "(_゜_゜_)"
+  },
+  {
+    "name": "goatse",
+    "keyword": "goatse,shock,weird,meme,surprise",
+    "emoji": "(з๏ε)"
+  },
+  {
+    "name": "gotit",
+    "keyword": "gotit,understand,ok,agree,point,yes",
+    "emoji": "(☞ﾟ∀ﾟ)☞"
+  },
   {
     "name": "greet",
-    "keyword": "greet,greetings",
+    "keyword": "greet,greetings,hello,hi,wave,welcome",
     "emoji": "( ´◔ ω◔`) ノシ"
   },
-  { "name": "gun", "keyword": "gun,mg", "emoji": "︻╦╤─" },
+  {
+    "name": "gun",
+    "keyword": "gun,mg,machine gun,weapon,shoot",
+    "emoji": "︻╦╤─"
+  },
   {
     "name": "hadouken",
-    "keyword": "hadouken",
+    "keyword": "hadouken,fireball,street fighter,attack,anime,fight",
     "emoji": "༼つಠ益ಠ༽つ ─=≡ΣO))"
   },
   {
     "name": "hammerandsickle",
-    "keyword": "hammerandsickle,hs",
+    "keyword": "hammerandsickle,hs,communism,soviet,russia,symbol",
     "emoji": "☭"
   },
-  { "name": "handleft", "keyword": "handleft,hl", "emoji": "☜" },
-  { "name": "handright", "keyword": "handright,hr", "emoji": "☞" },
-  { "name": "haha", "keyword": "haha", "emoji": "٩(^‿^)۶" },
-  { "name": "happy", "keyword": "happy", "emoji": "٩( ๑╹ ꇴ╹)۶" },
+  {
+    "name": "handleft",
+    "keyword": "handleft,hl,point,left,finger,hand",
+    "emoji": "☜"
+  },
+  {
+    "name": "handright",
+    "keyword": "handright,hr,point,right,finger,hand",
+    "emoji": "☞"
+  },
+  {
+    "name": "haha",
+    "keyword": "haha,laugh,lol,funny,happy,joy",
+    "emoji": "٩(^‿^)۶"
+  },
+  {
+    "name": "happy",
+    "keyword": "happy,glad,joy,smile,cheerful,pleased",
+    "emoji": "٩( ๑╹ ꇴ╹)۶"
+  },
   {
     "name": "happygarry",
-    "keyword": "happygarry",
+    "keyword": "happygarry,happy,garry,joy,excited,cheer",
     "emoji": "ᕕ( ᐛ )ᕗ"
   },
-  { "name": "h", "keyword": "h,heart", "emoji": "♥" },
+  { "name": "h", "keyword": "h,heart,love,symbol,hearts", "emoji": "♥" },
   {
     "name": "hello",
-    "keyword": "hello,ohai, bye",
+    "keyword": "hello,ohai,bye,hi,hey,greet,wave",
     "emoji": "(ʘ‿ʘ)╯"
   },
-  { "name": "help", "keyword": "help", "emoji": "(°Ω°)/" },
+  {
+    "name": "help",
+    "keyword": "help,sos,assist,worried,panic,scared",
+    "emoji": "\\(°Ω°)/"
+  },
   {
     "name": "highfive",
-    "keyword": "highfive",
+    "keyword": "highfive,high five,friends,clap,team,celebrate",
     "emoji": "._.)/\\(._."
   },
   {
     "name": "hitting",
-    "keyword": "hitting",
+    "keyword": "hitting,hit,punch,beat,angry,slap",
     "emoji": "( ｀皿´)｡ﾐ/"
   },
-  { "name": "hug", "keyword": "hug,hugs", "emoji": "(づ｡◕‿‿◕｡)づ" },
+  {
+    "name": "hug",
+    "keyword": "hug,hugs,cuddle,embrace,friend,love",
+    "emoji": "(づ｡◕‿‿◕｡)づ"
+  },
   {
     "name": "iknowright",
-    "keyword": "iknowright,ikr",
+    "keyword": "iknowright,ikr,agree,exactly,sure,true",
     "emoji": "┐｜･ิω･ิ#｜┌"
   },
   {
     "name": "illuminati",
-    "keyword": "illuminati",
+    "keyword": "illuminati,triangle,conspiracy,eye,secret,pyramid",
     "emoji": "୧(▲ᴗ▲)ノ"
   },
-  { "name": "infinity", "keyword": "infinity,inf", "emoji": "∞" },
-  { "name": "inlove", "keyword": "inlove", "emoji": "(っ´ω`c)♡" },
-  { "name": "int", "keyword": "int", "emoji": "∫" },
+  {
+    "name": "infinity",
+    "keyword": "infinity,inf,forever,eternal,endless,math",
+    "emoji": "∞"
+  },
+  {
+    "name": "inlove",
+    "keyword": "inlove,love,heart,crush,romance,cute",
+    "emoji": "(っ´ω`c)♡"
+  },
+  {
+    "name": "int",
+    "keyword": "int,integral,math,calculus,symbol",
+    "emoji": "∫"
+  },
   {
     "name": "internet",
-    "keyword": "internet",
+    "keyword": "internet,web,online,net,wifi,browser",
     "emoji": "ଘ(੭*ˊᵕˋ)੭* ̀ˋ ɪɴᴛᴇʀɴᴇᴛ"
   },
-  { "name": "interrobang", "keyword": "interrobang", "emoji": "‽" },
-  { "name": "jake", "keyword": "jake", "emoji": "(❍ᴥ❍ʋ)" },
-  { "name": "kappa", "keyword": "kappa", "emoji": "(¬,‿,¬)" },
-  { "name": "bat", "keyword": "bat", "emoji": "/|\\ ^._.^ /|\\" },
-  { "name": "kawaii", "keyword": "kawaii", "emoji": "≧◡≦" },
-  { "name": "keen", "keyword": "keen", "emoji": "┬┴┬┴┤Ɵ͆ل͜Ɵ͆ ༽ﾉ" },
-  { "name": "kiahh", "keyword": "kiahh", "emoji": "~(≧▽≦)/~" },
-  { "name": "kiss", "keyword": "kiss", "emoji": "(づ ￣ ³￣)づ" },
+  {
+    "name": "interrobang",
+    "keyword": "interrobang,punctuation,question,exclamation,symbol,what",
+    "emoji": "‽"
+  },
+  {
+    "name": "jake",
+    "keyword": "jake,adventure time,dog,cartoon,character",
+    "emoji": "(❍ᴥ❍ʋ)"
+  },
+  {
+    "name": "kappa",
+    "keyword": "kappa,twitch,sarcasm,troll,emote,joke",
+    "emoji": "(¬,‿,¬)"
+  },
+  {
+    "name": "bat",
+    "keyword": "bat,animal,vampire,halloween,wings,flying",
+    "emoji": "/|\\ ^._.^ /|\\"
+  },
+  {
+    "name": "kawaii",
+    "keyword": "kawaii,cute,adorable,japanese,happy,anime",
+    "emoji": "≧◡≦"
+  },
+  {
+    "name": "keen",
+    "keyword": "keen,eager,excited,lenny,interested",
+    "emoji": "┬┴┬┴┤Ɵ͆ل͜Ɵ͆ ༽ﾉ"
+  },
+  {
+    "name": "kiahh",
+    "keyword": "kiahh,excited,happy,cheer,yay,joy",
+    "emoji": "~\\(≧▽≦)/~"
+  },
+  {
+    "name": "kiss",
+    "keyword": "kiss,smooch,love,mwah,romance,kisses",
+    "emoji": "(づ ￣ ³￣)づ"
+  },
   {
     "name": "kyubey",
-    "keyword": "kyubey",
+    "keyword": "kyubey,madoka,anime,magical girl,contract,cat",
     "emoji": "／人◕ ‿‿ ◕人＼"
   },
-  { "name": "lambda", "keyword": "lambda", "emoji": "λ" },
-  { "name": "lazy", "keyword": "lazy", "emoji": "_(:3」∠)_" },
-  { "name": "lenny", "keyword": "lenny", "emoji": "( ͡° ͜ʖ ͡°)" },
+  {
+    "name": "lambda",
+    "keyword": "lambda,greek,letter,half life,math,symbol",
+    "emoji": "λ"
+  },
+  {
+    "name": "lazy",
+    "keyword": "lazy,tired,lying,sleepy,flat,couch",
+    "emoji": "_(:3」∠)_"
+  },
+  {
+    "name": "lenny",
+    "keyword": "lenny,lenny face,meme,smirk,face,lewd",
+    "emoji": "( ͡° ͜ʖ ͡°)"
+  },
   {
     "name": "lennybill",
-    "keyword": "lennybill",
+    "keyword": "lennybill,money,cash,dollar,rich,lenny",
     "emoji": "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]"
   },
   {
     "name": "lennyfight",
-    "keyword": "lennyfight",
+    "keyword": "lennyfight,fight,box,lenny,battle,punch",
     "emoji": "(ง ͠° ͟ʖ ͡°)ง"
   },
   {
     "name": "lennyflip",
-    "keyword": "lennyflip",
-    "emoji": "(ノ ͡° ͜ʖ ͡°ノ) ︵ ( ͜。 ͡ʖ ͜。)"
+    "keyword": "lennyflip,table,flip,lenny,rage,angry",
+    "emoji": "(ノ ͡° ͜ʖ ͡°ノ)   ︵ ( ͜。 ͡ʖ ͜。)"
   },
   {
     "name": "lennygang",
-    "keyword": "lennygang",
+    "keyword": "lennygang,group,gang,lenny,crowd,many",
     "emoji": "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)"
   },
   {
     "name": "lennyshrug",
-    "keyword": "lennyshrug",
+    "keyword": "lennyshrug,shrug,idk,dunno,lenny,whatever",
     "emoji": "¯\\_( ͡° ͜ʖ ͡°)_/¯"
   },
   {
     "name": "lennysir",
-    "keyword": "lennysir",
+    "keyword": "lennysir,sir,gentleman,lenny,fancy",
     "emoji": "( ಠ ͜ʖ ರೃ)"
   },
   {
     "name": "lennystalker",
-    "keyword": "lennystalker",
+    "keyword": "lennystalker,stalk,peek,watch,creep,lenny",
     "emoji": "┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴"
   },
   {
     "name": "lennystrong",
-    "keyword": "lennystrong",
+    "keyword": "lennystrong,strong,muscle,flex,lenny,gym",
     "emoji": "ᕦ( ͡° ͜ʖ ͡°)ᕤ"
   },
   {
     "name": "lennywizard",
-    "keyword": "lennywizard",
+    "keyword": "lennywizard,wizard,magic,spell,lenny,wand",
     "emoji": "╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ"
   },
   {
     "name": "loading",
-    "keyword": "loading",
+    "keyword": "loading,progress,wait,bar,percent,please wait",
     "emoji": "███▒▒▒▒▒▒▒"
   },
-  { "name": "lol", "keyword": "lol", "emoji": "L(° O °L)" },
-  { "name": "look", "keyword": "look", "emoji": "(ಡ_ಡ)☞" },
-  { "name": "loud", "keyword": "loud,noise", "emoji": "ᕦ(⩾﹏⩽)ᕥ" },
-  { "name": "love", "keyword": "love", "emoji": "♥‿♥" },
-  { "name": "lovebear", "keyword": "lovebear", "emoji": "ʕ♥ᴥ♥ʔ" },
-  { "name": "lumpy", "keyword": "lumpy", "emoji": "꒰ ꒡⌓꒡꒱" },
-  { "name": "luv", "keyword": "luv", "emoji": "-`ღ´-" },
+  {
+    "name": "lol",
+    "keyword": "lol,laugh,haha,funny,lmao,joy",
+    "emoji": "L(° O °L)"
+  },
+  {
+    "name": "look",
+    "keyword": "look,see,point,watch,check this,there",
+    "emoji": "(ಡ_ಡ)☞"
+  },
+  {
+    "name": "loud",
+    "keyword": "loud,noise,shout,yell,scream,angry",
+    "emoji": "ᕦ(⩾﹏⩽)ᕥ"
+  },
+  {
+    "name": "love",
+    "keyword": "love,heart,romance,adore,happy,in love",
+    "emoji": "♥‿♥"
+  },
+  {
+    "name": "lovebear",
+    "keyword": "lovebear,bear,love,heart,cute,teddy",
+    "emoji": "ʕ♥ᴥ♥ʔ"
+  },
+  {
+    "name": "lumpy",
+    "keyword": "lumpy,blob,sad,lump,weird,shy",
+    "emoji": "꒰ ꒡⌓꒡꒱"
+  },
+  { "name": "luv", "keyword": "luv,love,heart,adore,cute", "emoji": "-`ღ´-" },
   {
     "name": "magic",
-    "keyword": "magic",
+    "keyword": "magic,wizard,spell,wand,sparkle,sorcery",
     "emoji": "ヽ(｀Д´)⊃━☆ﾟ. * ･ ｡ﾟ,"
   },
   {
     "name": "magicflip",
-    "keyword": "magicflip",
+    "keyword": "magicflip,magic,flip,table,rage,spell",
     "emoji": "(/¯◡ ‿ ◡)/¯ ~ ┻━┻"
   },
-  { "name": "meep", "keyword": "meep", "emoji": "\\(°^°)/" },
-  { "name": "meh", "keyword": "meh", "emoji": "ಠ_ಠ" },
+  {
+    "name": "meep",
+    "keyword": "meep,surprised,scared,eek,oops,startled",
+    "emoji": "\\(°^°)/"
+  },
+  {
+    "name": "meh",
+    "keyword": "meh,unimpressed,whatever,bored,disapproval,look",
+    "emoji": "ಠ_ಠ"
+  },
   {
     "name": "metal",
-    "keyword": "metal,rock",
+    "keyword": "metal,rock,horns,heavy metal,music,concert",
     "emoji": "\\m/,(> . <)_\\m/"
   },
-  { "name": "mistyeyes", "keyword": "mistyeyes", "emoji": "ಡ_ಡ" },
+  {
+    "name": "mistyeyes",
+    "keyword": "mistyeyes,tears,sad,touched,emotional,cry",
+    "emoji": "ಡ_ಡ"
+  },
   {
     "name": "soviettableflip",
-    "keyword": "soviettableflip",
+    "keyword": "soviettableflip,table,flip,soviet,russia,rage",
     "emoji": "ノ┬─┬ノ ︵ ( \\o°o)\\"
   },
   {
     "name": "monster",
-    "keyword": "monster",
+    "keyword": "monster,creature,scary,horror,beast,creepy",
     "emoji": "༼ ༎ຶ ෴ ༎ຶ༽"
   },
-  { "name": "natural", "keyword": "natural", "emoji": "♮" },
+  {
+    "name": "natural",
+    "keyword": "natural,music,note,symbol,sharp,flat",
+    "emoji": "♮"
+  },
   {
     "name": "needle",
-    "keyword": "needle,inject",
+    "keyword": "needle,inject,syringe,drugs,shot,vaccine",
     "emoji": "┌(◉ ͜ʖ◉)つ┣▇▇▇═──"
   },
-  { "name": "nerd", "keyword": "nerd", "emoji": "(⌐⊙_⊙)" },
-  { "name": "nice", "keyword": "nice", "emoji": "( ͡° ͜ °)" },
-  { "name": "no", "keyword": "no", "emoji": "→_←" },
+  {
+    "name": "nerd",
+    "keyword": "nerd,geek,glasses,smart,study,dork",
+    "emoji": "(⌐⊙_⊙)"
+  },
+  {
+    "name": "nice",
+    "keyword": "nice,good,great,ok,approve,lenny",
+    "emoji": "( ͡° ͜ °)"
+  },
+  { "name": "no", "keyword": "no,nope,refuse,deny,disagree", "emoji": "→_←" },
   {
     "name": "noclue",
-    "keyword": "noclue",
+    "keyword": "noclue,dunno,confused,unknown,idk,lost",
     "emoji": "／人◕ __ ◕人＼"
   },
   {
     "name": "nom",
-    "keyword": "nom,yummy, delicious",
+    "keyword": "nom,yummy,delicious,eat,food,tasty",
     "emoji": "(っˆڡˆς)"
   },
-  { "name": "note", "keyword": "note,sing", "emoji": "♫" },
+  {
+    "name": "note",
+    "keyword": "note,sing,music,song,tune,melody",
+    "emoji": "♫"
+  },
   {
     "name": "nuclear",
-    "keyword": "nuclear,radioactive, nukular",
+    "keyword": "nuclear,radioactive,nukular,atomic,radiation,danger",
     "emoji": "☢"
   },
-  { "name": "nyan", "keyword": "nyan", "emoji": "~=[,,_,,]:3" },
-  { "name": "nyeh", "keyword": "nyeh", "emoji": "@^@" },
-  { "name": "ohshit", "keyword": "ohshit", "emoji": "( º﹃º )" },
-  { "name": "omega", "keyword": "omega", "emoji": "Ω" },
-  { "name": "omg", "keyword": "omg", "emoji": "◕_◕" },
-  { "name": "opt", "keyword": "opt,option", "emoji": "⌥" },
-  { "name": "orly", "keyword": "orly", "emoji": "(눈_눈)" },
-  { "name": "ohyou", "keyword": "ohyou,ou", "emoji": "(◞థ౪థ)ᴖ" },
+  {
+    "name": "nyan",
+    "keyword": "nyan,cat,rainbow,pop tart,meme,flying",
+    "emoji": "~=[,,_,,]:3"
+  },
+  { "name": "nyeh", "keyword": "nyeh,silly,derp,goofy,tease", "emoji": "@^@" },
+  {
+    "name": "ohshit",
+    "keyword": "ohshit,oops,shocked,uh oh,panic,scared",
+    "emoji": "( º﹃º )"
+  },
+  {
+    "name": "omega",
+    "keyword": "omega,greek,letter,ohm,end,symbol",
+    "emoji": "Ω"
+  },
+  {
+    "name": "omg",
+    "keyword": "omg,wow,shocked,surprised,gasp,amazed",
+    "emoji": "◕_◕"
+  },
+  { "name": "opt", "keyword": "opt,option,alt,mac,key,symbol", "emoji": "⌥" },
+  {
+    "name": "orly",
+    "keyword": "orly,really,skeptical,doubt,unamused,suspicious",
+    "emoji": "(눈_눈)"
+  },
+  {
+    "name": "ohyou",
+    "keyword": "ohyou,ou,tease,playful,flirt,sly",
+    "emoji": "(◞థ౪థ)ᴖ"
+  },
   {
     "name": "peace",
-    "keyword": "peace,victory",
+    "keyword": "peace,victory,hippie,two fingers,calm,v",
     "emoji": "✌(-‿-)✌"
   },
-  { "name": "pear", "keyword": "pear", "emoji": "(__>-" },
-  { "name": "pi", "keyword": "pi", "emoji": "π" },
+  { "name": "pear", "keyword": "pear,fruit,food,butt,shape", "emoji": "(__>-" },
+  { "name": "pi", "keyword": "pi,math,greek,circle,3.14,symbol", "emoji": "π" },
   {
     "name": "pingpong",
-    "keyword": "pingpong",
+    "keyword": "pingpong,table tennis,game,sport,ball,play",
     "emoji": "( •_•)O*¯`·.¸.·´¯`°Q(•_• )"
   },
-  { "name": "plain", "keyword": "plain", "emoji": "._." },
+  {
+    "name": "plain",
+    "keyword": "plain,neutral,blank,expressionless,straight,face",
+    "emoji": "._."
+  },
   {
     "name": "pleased",
-    "keyword": "pleased",
+    "keyword": "pleased,happy,content,satisfied,proud,smug",
     "emoji": "(˶‾᷄ ⁻̫ ‾᷅˵)"
   },
-  { "name": "point", "keyword": "point", "emoji": "(☞ﾟヮﾟ)☞" },
-  { "name": "pooh", "keyword": "pooh", "emoji": "ʕ •́؈•̀)" },
+  {
+    "name": "point",
+    "keyword": "point,finger,there,you,this,gesture",
+    "emoji": "(☞ﾟヮﾟ)☞"
+  },
+  {
+    "name": "pooh",
+    "keyword": "pooh,winnie,bear,honey,cartoon,cute",
+    "emoji": "ʕ •́؈•̀)"
+  },
   {
     "name": "porcupine",
-    "keyword": "porcupine",
+    "keyword": "porcupine,animal,spikes,hedgehog,prickly",
     "emoji": "(•ᴥ• )́`́'́`́'́⻍"
   },
-  { "name": "pound", "keyword": "pound", "emoji": "£" },
-  { "name": "praise", "keyword": "praise", "emoji": "(☝ ՞ਊ ՞)☝" },
-  { "name": "punch", "keyword": "punch", "emoji": "O=('-'Q)" },
-  { "name": "rage", "keyword": "rage,mad", "emoji": "t(ಠ益ಠt)" },
+  {
+    "name": "pound",
+    "keyword": "pound,money,gbp,currency,uk,symbol",
+    "emoji": "£"
+  },
+  {
+    "name": "praise",
+    "keyword": "praise,worship,thank,sun,hallelujah,blessed",
+    "emoji": "(☝ ՞ਊ ՞)☝"
+  },
+  {
+    "name": "punch",
+    "keyword": "punch,fight,hit,box,fist,attack",
+    "emoji": "O=('-'Q)"
+  },
+  {
+    "name": "rage",
+    "keyword": "rage,mad,angry,furious,anger,fury",
+    "emoji": "t(ಠ益ಠt)"
+  },
   {
     "name": "rageflip",
-    "keyword": "rageflip",
+    "keyword": "rageflip,table,flip,angry,rage,mad",
     "emoji": "(ノಠ益ಠ)ノ彡┻━┻"
   },
   {
     "name": "rainbowcat",
-    "keyword": "rainbowcat",
+    "keyword": "rainbowcat,cat,rainbow,nyan,kitty,magic",
     "emoji": "(=^･ｪ･^=))ﾉ彡☆"
   },
-  { "name": "really", "keyword": "really", "emoji": "ò_ô" },
-  { "name": "r", "keyword": "r", "emoji": "®" },
-  { "name": "riot", "keyword": "riot", "emoji": "୧༼ಠ益ಠ༽୨" },
-  { "name": "rolldice", "keyword": "rolldice", "emoji": "⚄" },
-  { "name": "rolleyes", "keyword": "rolleyes", "emoji": "(◔_◔)" },
-  { "name": "rose", "keyword": "rose", "emoji": "✿ڿڰۣ—" },
-  { "name": "run", "keyword": "run", "emoji": "(╯°□°)╯" },
-  { "name": "sad", "keyword": "sad", "emoji": "ε(´סּ︵סּ`)з" },
+  {
+    "name": "really",
+    "keyword": "really,seriously,skeptical,what,doubt,huh",
+    "emoji": "ò_ô"
+  },
+  {
+    "name": "r",
+    "keyword": "r,registered,trademark,symbol,copyright",
+    "emoji": "®"
+  },
+  {
+    "name": "riot",
+    "keyword": "riot,protest,angry,rage,mob,fight",
+    "emoji": "୧༼ಠ益ಠ༽୨"
+  },
+  {
+    "name": "rolldice",
+    "keyword": "rolldice,dice,roll,random,game,die",
+    "emoji": "⚄"
+  },
+  {
+    "name": "rolleyes",
+    "keyword": "rolleyes,eye roll,annoyed,whatever,sarcasm,sigh",
+    "emoji": "(◔_◔)"
+  },
+  {
+    "name": "rose",
+    "keyword": "rose,flower,love,romance,red,valentine",
+    "emoji": "✿ڿڰۣ—"
+  },
+  {
+    "name": "run",
+    "keyword": "run,running,flee,escape,scared",
+    "emoji": "(╯°□°)╯"
+  },
+  {
+    "name": "sad",
+    "keyword": "sad,unhappy,cry,down,upset,blue",
+    "emoji": "ε(´סּ︵סּ`)з"
+  },
   {
     "name": "saddonger",
-    "keyword": "saddonger",
+    "keyword": "saddonger,sad,donger,disappointed,lenny",
     "emoji": "ヽ༼ຈʖ̯ຈ༽ﾉ"
   },
   {
     "name": "sadlenny",
-    "keyword": "sadlenny",
+    "keyword": "sadlenny,sad,lenny,disappointed,unhappy,cry",
     "emoji": "( ͡° ʖ̯ ͡°)"
   },
-  { "name": "sharp", "keyword": "sharp,diesis", "emoji": "♯" },
-  { "name": "shout", "keyword": "shout", "emoji": "╚(•⌂•)╝" },
-  { "name": "shrug", "keyword": "shrug", "emoji": "¯\\_(ツ)_/¯" },
-  { "name": "shy", "keyword": "shy", "emoji": "=^_^=" },
-  { "name": "sigma", "keyword": "sigma,sum", "emoji": "Σ" },
-  { "name": "skull", "keyword": "skull", "emoji": "☠" },
-  { "name": "smile", "keyword": "smile", "emoji": "ツ" },
-  { "name": "smiley", "keyword": "smiley", "emoji": "☺︎" },
-  { "name": "smirk", "keyword": "smirk", "emoji": "¬‿¬" },
-  { "name": "snowman", "keyword": "snowman", "emoji": "☃" },
-  { "name": "sob", "keyword": "sob", "emoji": "(;´༎ຶД༎ຶ`)" },
-  { "name": "spade", "keyword": "spade", "emoji": "♠" },
-  { "name": "sqrt", "keyword": "sqrt", "emoji": "√" },
-  { "name": "squid", "keyword": "squid", "emoji": "<コ:彡" },
-  { "name": "star", "keyword": "star", "emoji": "★" },
-  { "name": "strong", "keyword": "strong", "emoji": "ᕙ(⇀‸↼‶)ᕗ" },
+  {
+    "name": "sharp",
+    "keyword": "sharp,diesis,music,note,symbol,hash",
+    "emoji": "♯"
+  },
+  {
+    "name": "shout",
+    "keyword": "shout,yell,scream,loud,shouting,cheer",
+    "emoji": "╚(•⌂•)╝"
+  },
+  {
+    "name": "shrug",
+    "keyword": "shrug,dunno,idk,whatever,unsure,who knows",
+    "emoji": "¯\\_(ツ)_/¯"
+  },
+  {
+    "name": "shy",
+    "keyword": "shy,bashful,embarrassed,timid,cute,blush",
+    "emoji": "=^_^="
+  },
+  {
+    "name": "sigma",
+    "keyword": "sigma,sum,greek,letter,math,symbol",
+    "emoji": "Σ"
+  },
+  {
+    "name": "skull",
+    "keyword": "skull,death,dead,danger,poison,pirate",
+    "emoji": "☠"
+  },
+  { "name": "smile", "keyword": "smile,happy,joy,glad,face,tsu", "emoji": "ツ" },
+  { "name": "smiley", "keyword": "smiley,smile,happy,face,joy", "emoji": "☺︎" },
+  {
+    "name": "smirk",
+    "keyword": "smirk,smug,sly,pleased,grin,cocky",
+    "emoji": "¬‿¬"
+  },
+  {
+    "name": "snowman",
+    "keyword": "snowman,winter,snow,christmas,cold,frosty",
+    "emoji": "☃"
+  },
+  {
+    "name": "sob",
+    "keyword": "sob,cry,weep,tears,sad,upset",
+    "emoji": "(;´༎ຶД༎ຶ`)"
+  },
+  {
+    "name": "spade",
+    "keyword": "spade,cards,suit,symbol,spades",
+    "emoji": "♠"
+  },
+  {
+    "name": "sqrt",
+    "keyword": "sqrt,square root,math,root,symbol",
+    "emoji": "√"
+  },
+  {
+    "name": "squid",
+    "keyword": "squid,octopus,sea,animal,ocean,tentacles",
+    "emoji": "<コ:彡"
+  },
+  {
+    "name": "star",
+    "keyword": "star,favorite,rating,night,symbol,sky",
+    "emoji": "★"
+  },
+  {
+    "name": "strong",
+    "keyword": "strong,muscle,flex,power,arm,gym",
+    "emoji": "ᕙ(⇀‸↼‶)ᕗ"
+  },
   {
     "name": "suicide",
-    "keyword": "suicide",
+    "keyword": "suicide,dead,gun,shoot,sad,die",
     "emoji": "ε/̵͇̿̿/’̿’̿ ̿(◡︵◡)"
   },
-  { "name": "sum", "keyword": "sum", "emoji": "∑" },
-  { "name": "sun", "keyword": "sun", "emoji": "☀" },
+  { "name": "sum", "keyword": "sum,sigma,total,math,add,symbol", "emoji": "∑" },
+  {
+    "name": "sun",
+    "keyword": "sun,sunny,weather,day,bright,hot",
+    "emoji": "☀"
+  },
   {
     "name": "surprised",
-    "keyword": "surprised",
+    "keyword": "surprised,shocked,wow,astonished,amazed,gasp",
     "emoji": "(๑•́ ヮ •̀๑)"
   },
   {
     "name": "surrender",
-    "keyword": "surrender",
-    "emoji": "_(-_-)_/"
+    "keyword": "surrender,give up,yield,quit,white flag,lose",
+    "emoji": "\\_(-_-)_/"
   },
   {
     "name": "stalker",
-    "keyword": "stalker",
+    "keyword": "stalker,creep,watch,peek,spy,follow",
     "emoji": "┬┴┬┴┤(･_├┬┴┬┴"
   },
-  { "name": "swag", "keyword": "swag", "emoji": "(̿▀̿‿ ̿▀̿ ̿)" },
+  {
+    "name": "swag",
+    "keyword": "swag,cool,sunglasses,style,confident,lenny",
+    "emoji": "(̿▀̿‿ ̿▀̿ ̿)"
+  },
   {
     "name": "sword",
-    "keyword": "sword",
+    "keyword": "sword,weapon,blade,fight,knight,medieval",
     "emoji": "o()xxxx[{::::::::::::::::::>"
   },
   {
     "name": "tabledown",
-    "keyword": "tabledown",
+    "keyword": "tabledown,put back,restore,unflip,calm,table",
     "emoji": "┬─┬﻿ ノ( ゜-゜ノ)"
   },
   {
     "name": "tableflip",
-    "keyword": "tableflip",
+    "keyword": "tableflip,flip,rage,angry,table,mad",
     "emoji": "(ノ ゜Д゜)ノ ︵ ┻━┻"
   },
-  { "name": "tau", "keyword": "tau", "emoji": "τ" },
-  { "name": "tears", "keyword": "tears", "emoji": "(ಥ﹏ಥ)" },
+  {
+    "name": "tau",
+    "keyword": "tau,greek,letter,math,symbol,2pi",
+    "emoji": "τ"
+  },
+  {
+    "name": "tears",
+    "keyword": "tears,cry,sad,weep,upset,crying",
+    "emoji": "(ಥ﹏ಥ)"
+  },
   {
     "name": "terrorist",
-    "keyword": "terrorist",
+    "keyword": "terrorist,gun,rage,angry,attack,weapon",
     "emoji": "୧༼ಠ益ಠ༽︻╦╤─"
   },
   {
     "name": "thanks",
-    "keyword": "thanks,thankyou, ty",
+    "keyword": "thanks,thankyou,ty,thank you,grateful,cheers",
     "emoji": "\\(^-^)/"
   },
-  { "name": "therefore", "keyword": "therefore,so", "emoji": "⸫" },
-  { "name": "this", "keyword": "this", "emoji": "( ͡° ͜ʖ ͡°)_/¯" },
+  {
+    "name": "therefore",
+    "keyword": "therefore,so,thus,math,symbol,hence",
+    "emoji": "⸫"
+  },
+  {
+    "name": "this",
+    "keyword": "this,point,agree,that,exactly,same",
+    "emoji": "( ͡° ͜ʖ ͡°)_/¯"
+  },
   {
     "name": "tiefighter",
-    "keyword": "tiefighter",
+    "keyword": "tiefighter,star wars,empire,ship,spaceship,sci-fi",
     "emoji": "|=-(¤)-=|"
   },
-  { "name": "tired", "keyword": "tired", "emoji": "(=____=)" },
+  {
+    "name": "tired",
+    "keyword": "tired,sleepy,exhausted,weary,sleep,yawn",
+    "emoji": "(=____=)"
+  },
   {
     "name": "toldyouso",
-    "keyword": "toldyouso,toldyou",
+    "keyword": "toldyouso,toldyou,told you,i told you so,smug,point",
     "emoji": "☜(꒡⌓꒡)"
   },
-  { "name": "toogood", "keyword": "toogood", "emoji": "ᕦ(òᴥó)ᕥ" },
-  { "name": "triangle", "keyword": "triangle,t", "emoji": "▲" },
+  {
+    "name": "toogood",
+    "keyword": "toogood,amazing,awesome,great,excellent,wow",
+    "emoji": "ᕦ(òᴥó)ᕥ"
+  },
+  {
+    "name": "triangle",
+    "keyword": "triangle,t,shape,delta,symbol,black",
+    "emoji": "▲"
+  },
   {
     "name": "unflip",
-    "keyword": "unflip",
+    "keyword": "unflip,calm,restore,table,put back,fix",
     "emoji": "┬──┬ ノ(ò_óノ)"
   },
-  { "name": "up", "keyword": "up", "emoji": "↑" },
-  { "name": "victory", "keyword": "victory", "emoji": "(๑•̀ㅂ•́)ง✧" },
-  { "name": "wat", "keyword": "wat", "emoji": "(ÒДÓױ)" },
-  { "name": "wave", "keyword": "wave", "emoji": "( * ^ *) ノシ" },
-  { "name": "whaa", "keyword": "whaa", "emoji": "Ö" },
-  { "name": "whistle", "keyword": "whistle", "emoji": "(っ^з^)♪♬" },
-  { "name": "whoa", "keyword": "whoa", "emoji": "(°o•)" },
-  { "name": "why", "keyword": "why", "emoji": "ლ(`◉◞౪◟◉‵ლ)" },
+  { "name": "up", "keyword": "up,arrow,north,above,symbol", "emoji": "↑" },
+  {
+    "name": "victory",
+    "keyword": "victory,win,winner,peace,celebrate,success",
+    "emoji": "(๑•̀ㅂ•́)ง✧"
+  },
+  {
+    "name": "wat",
+    "keyword": "wat,what,confused,shocked,huh,wtf",
+    "emoji": "(ÒДÓױ)"
+  },
+  {
+    "name": "wave",
+    "keyword": "wave,hello,goodbye,bye,hi,greet",
+    "emoji": "( * ^ *) ノシ"
+  },
+  {
+    "name": "whaa",
+    "keyword": "whaa,surprised,shocked,what,o,umlaut",
+    "emoji": "Ö"
+  },
+  {
+    "name": "whistle",
+    "keyword": "whistle,music,whistling,tune,happy,casual",
+    "emoji": "(っ^з^)♪♬"
+  },
+  {
+    "name": "whoa",
+    "keyword": "whoa,wow,surprised,amazed,shock,gasp",
+    "emoji": "(°o•)"
+  },
+  {
+    "name": "why",
+    "keyword": "why,question,confused,anguish,cry,distraught",
+    "emoji": "ლ(`◉◞౪◟◉‵ლ)"
+  },
   {
     "name": "witchtext",
-    "keyword": "witchtext",
+    "keyword": "witchtext,witch,font,text,style,generator",
     "emoji": "WHΣИ $HΛLL WΣ †HЯΣΣ MΣΣ† ΛGΛ|И?"
   },
-  { "name": "woo", "keyword": "woo", "emoji": "＼(＾O＾)／" },
-  { "name": "wtf", "keyword": "wtf", "emoji": "(⊙＿⊙')" },
-  { "name": "wut", "keyword": "wut", "emoji": "⊙ω⊙" },
-  { "name": "yay", "keyword": "yay", "emoji": "\\( ﾟヮﾟ)/" },
-  { "name": "yeah", "keyword": "yeah,yes", "emoji": "(•̀ᴗ•́)و ̑̑" },
-  { "name": "yen", "keyword": "yen", "emoji": "¥" },
-  { "name": "yinyang", "keyword": "yinyang,yy", "emoji": "☯" },
+  {
+    "name": "woo",
+    "keyword": "woo,cheer,celebrate,excited,hooray,yay",
+    "emoji": "＼(＾O＾)／"
+  },
+  {
+    "name": "wtf",
+    "keyword": "wtf,what the fuck,shocked,confused,surprised,huh",
+    "emoji": "(⊙＿⊙')"
+  },
+  {
+    "name": "wut",
+    "keyword": "wut,what,confused,huh,derp,surprised",
+    "emoji": "⊙ω⊙"
+  },
+  {
+    "name": "yay",
+    "keyword": "yay,cheer,hooray,happy,celebrate,woo",
+    "emoji": "\\( ﾟヮﾟ)/"
+  },
+  {
+    "name": "yeah",
+    "keyword": "yeah,yes,agree,cool,confident,approve",
+    "emoji": "(•̀ᴗ•́)و ̑̑"
+  },
+  {
+    "name": "yen",
+    "keyword": "yen,money,jpy,currency,japan,symbol",
+    "emoji": "¥"
+  },
+  {
+    "name": "yinyang",
+    "keyword": "yinyang,yy,balance,tao,peace,symbol",
+    "emoji": "☯"
+  },
   {
     "name": "yolo",
-    "keyword": "yolo",
+    "keyword": "yolo,you only live once,carpe diem,life,motto,risk",
     "emoji": "Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ"
   },
   {
     "name": "youkids",
-    "keyword": "youkids,ukids",
+    "keyword": "youkids,ukids,kids,get off,old man,lawn",
     "emoji": "ლ༼>╭ ͟ʖ╮<༽ლ"
   },
   {
     "name": "yuno",
-    "keyword": "yuno",
+    "keyword": "yuno,y u no,why you no,meme,angry,question",
     "emoji": "(屮ﾟДﾟ)屮 Y U NO"
   },
   {
     "name": "zen",
-    "keyword": "zen,meditation, omm",
+    "keyword": "zen,meditation,omm,calm,peace,relax",
     "emoji": "⊹╰(⌣ʟ⌣)╯⊹"
   },
   {
     "name": "zoidberg",
-    "keyword": "zoidberg",
+    "keyword": "zoidberg,futurama,crab,lobster,cartoon,doctor",
     "emoji": "(V) (°,,,,°) (V)"
   },
-  { "name": "zombie", "keyword": "zombie", "emoji": "[¬º-°]¬" }
+  {
+    "name": "zombie",
+    "keyword": "zombie,undead,walking dead,halloween,monster,scary",
+    "emoji": "[¬º-°]¬"
+  }
 ]

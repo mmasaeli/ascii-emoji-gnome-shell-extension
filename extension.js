@@ -117,9 +117,20 @@ export default class AsciiEmojiExtension extends Extension {
   enable() {
     this._indicator = new Indicator();
     Main.panel.addToStatusArea(this.uuid, this._indicator);
+    // Connect after addToStatusArea so this handler runs after the popup menu
+    // manager's own open-state handler, which moves key focus to the panel
+    // button and would otherwise override ours.
+    this._openStateId = this._indicator.menu.connect(
+      "open-state-changed",
+      (_menu, isOpen) => {
+        if (isOpen) this._indicator.searchEntry.grab_key_focus();
+      }
+    );
   }
 
   disable() {
+    this._indicator.menu.disconnect(this._openStateId);
+    this._openStateId = null;
     this._indicator.destroy();
     this._indicator = null;
   }
