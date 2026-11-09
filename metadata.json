@@ -4,5 +4,5 @@
     "description": "Search and copy Unicode Kaomoji and ASCII emojis straight from your top panel, like (◉‿◉)\n\nFeatures:\n• Hundreds of Kaomoji and ASCII emojis, searchable by name or keyword\n• One click copies the emoji to the clipboard\n• Your most-used emojis move to the top, and are remembered across updates\n• Lightweight panel indicator\n\nThe emoji list is compiled from asciimoji.com. Source code, release notes and bug reports are on GitHub.",
     "shell-version": [ "46", "47", "48", "49", "50", "51"],
     "url": "https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension",
-    "version": 10
+    "version": 8
 }

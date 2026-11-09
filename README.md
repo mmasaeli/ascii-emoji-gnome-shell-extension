@@ -4,7 +4,7 @@
 
 A GNOME Shell extension that lets you quickly search and copy Unicode Kaomoji/ASCII emojis from your panel.
 
-The list of emojis is compiled from (https://asciimoji.com/)[https://asciimoji.com/].
+The list of emojis is compiled from [asciimoji.com](https://asciimoji.com/).
 
 ## Features
 
