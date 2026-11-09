@@ -4,13 +4,7 @@ All notable changes to this extension are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions are the
 single integers used by extensions.gnome.org (`version` in `metadata.json`).
 
-## [10] - 2026-11-05
-
-Since v7. Versions 8 and 9 were intermediate bumps during this work and are
-covered by this entry.
-
-This is a bigger jump than usual because it fixes the most annoying problem
-with the extension: your most-used emojis were forgotten on every update.
+## [8] - 2026-11-05
 
 ### Fixed
 
@@ -66,5 +60,3 @@ with the extension: your most-used emojis were forgotten on every update.
 Earlier versions are not documented here. See the
 [git history](https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension/commits/main).
 
-[10]: https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension/commits/main
-[7]: https://github.com/mmasaeli/ascii-emoji-gnome-shell-extension/commits/main
